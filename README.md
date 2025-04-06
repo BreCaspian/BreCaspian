@@ -30,7 +30,7 @@
 
 
 <!-- Welcome words -->
-<h1 style="color: #FFA500;">Welcome to Yaosir's GitHub ! 🍀</h1>
+<h1 style="color: #FFA500;">Welcome to AAAx1anyu's GitHub ! 🍀</h1>
 
 
 
@@ -49,7 +49,7 @@
 
 
 <!-- Dynamic Skills Logo -->
-<div style="display: flex; align-items: flex-start;"><img src="https://techstack-generator.vercel.app/cpp-icon.svg" alt="icon" width="65" height="65" /><img src="https://techstack-generator.vercel.app/python-icon.svg" alt="icon" width="65" height="65" /><img src="https://techstack-generator.vercel.app/github-icon.svg" alt="icon" width="65" height="65" /><img src="https://techstack-generator.vercel.app/docker-icon.svg" alt="icon" width="65" height="65" /><img src="https://techstack-generator.vercel.app/raspberrypi-icon.svg" alt="icon" width="65" height="65" /><img src="https://techstack-generator.vercel.app/react-icon.svg" alt="icon" width="65" height="65" /></div>
+<div style="display: flex; align-items: flex-start;"><img src="https://github.com/GolangUA/gopher-logos/blob/master/PNG/gopher_birthday.png" alt="icon" width="65" height="65" /><img src="https://techstack-generator.vercel.app/cpp-icon.svg" alt="icon" width="65" height="65" /><img src="https://techstack-generator.vercel.app/python-icon.svg" alt="icon" width="65" height="65" /><img src="https://techstack-generator.vercel.app/github-icon.svg" alt="icon" width="65" height="65" /><img src="https://techstack-generator.vercel.app/docker-icon.svg" alt="icon" width="65" height="65" /><img src="https://techstack-generator.vercel.app/js-icon.svg" alt="icon" width="65" height="65" /><img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="icon" width="65" height="65" /></div>
 
 
 
@@ -78,7 +78,7 @@
     <a href="https://github.com/Naereen/StrapDown.js/blob/master/LICENSE">
       <img src="https://img.shields.io/github/license/Naereen/StrapDown.js.svg" alt="GitHub license">
     </a>
-    <a href="https://blog.csdn.net/qq_60865111?type=blog">
+    <a href="https://blog.csdn.net/2401_85922036?spm=1000.2115.3001.5343">
       <img src="https://img.shields.io/badge/Blog-CSDN-orange.svg" alt="Blog">
     </a>
   </div>
@@ -88,7 +88,7 @@
 
 
 <!-- Motto -->
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&quote=用心传递技术。&author=Yaosir"  />
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&quote=用心传递技术。&author=AAAx1anyu"  />
 
 
 
@@ -101,7 +101,7 @@
 
 
 <!-- Skills Emoji -->
-[![My Skills](https://skillicons.dev/icons?i=c,cpp,py,rust,matlab,linux,github,pytorch,tensorflow,opencv,git,stackoverflow,visualstudio,vscode,pycharm,anaconda,raspberrypi,docker,vim,gmail,gcp&theme=dark&perline=7)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=c,cpp,py,linux,github,pytorch,tensorflow,git,visualstudio,vscode,pycharm,anaconda,docker,go,blender,gmail,gcp&theme=dark&perline=7)](https://skillicons.dev)
 
 
 
@@ -116,23 +116,23 @@
 
 
 <!-- Stats Card -->
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=BreCaspian&show_icons=true&theme=radical)
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=AAAxianyu&show_icons=true&theme=radical)
 
 
 
 <!-- Blogs List -->
 # :orange_book: Latest Blog Posts :cactus:
 <!-- BLOG-POST-LIST:START -->
-- [Windows强制删除任何你想删除的文件和文件夹](https://blog.csdn.net/qq_60865111/article/details/147003366)
-- [开源且完全没有审核限制的大型语言模型的概述](https://blog.csdn.net/qq_60865111/article/details/147001840)
-- [Git 从入门到精通（开源协作特别版）](https://blog.csdn.net/qq_60865111/article/details/147001420)
-- [GitHub 上开源一个小项目的完整指南](https://blog.csdn.net/qq_60865111/article/details/147001329)
-- [使用GitHub Actions构建CI/CD流程](https://blog.csdn.net/qq_60865111/article/details/146995859)
+- [AI agent（prompt优化）](https://blog.csdn.net/2401_85922036/article/details/144729688?spm=1001.2014.3001.5501)
+- [php反序列化学习1](https://blog.csdn.net/2401_85922036/article/details/144703167?spm=1001.2014.3001.5501)
+- [AI agent（agent工作流程搭建）](https://blog.csdn.net/2401_85922036/article/details/144795425?spm=1001.2014.3001.5501)
+- [Pytorch学习之路(1)](https://blog.csdn.net/2401_85922036/article/details/145555620?spm=1001.2014.3001.5501)
+- [Pytorch学习之路(7)](https://blog.csdn.net/2401_85922036/article/details/145665736?spm=1001.2014.3001.5501)
 <!-- BLOG-POST-LIST:END -->
 
 
 <!-- Award List -->
-![trophy](https://github-profile-trophy.vercel.app/?username=BreCaspian&row=1&column=5&theme=juicyfresh&no-frame=true&no-bg=true)
+![trophy](https://github-profile-trophy.vercel.app/?username=AAAxianyu&row=1&column=5&theme=juicyfresh&no-frame=true&no-bg=true)
 
 
 
@@ -141,9 +141,9 @@
   <tr>
     <td>
       <picture>
-        <source media="(prefers-color-scheme: dark)"  srcset="https://github-readme-activity-graph.vercel.app/graph?username=BreCaspian&theme=tokyo-night" />
-        <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=BreCaspian&theme=xcode" />
-        <img src="https://github-readme-activity-graph.vercel.app/graph?username=BreCaspian&theme=tokyo-night" />
+        <source media="(prefers-color-scheme: dark)"  srcset="https://github-readme-activity-graph.vercel.app/graph?username=AAAxianyu&theme=tokyo-night" />
+        <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=AAAxianyu&theme=xcode" />
+        <img src="https://github-readme-activity-graph.vercel.app/graph?username=AAAxianyu&theme=tokyo-night" />
       </picture>
   </tr>
 </table>
@@ -152,7 +152,7 @@
 
 
 <!-- 3D Contribution -->
-![GitHub 3D Contribution](https://raw.githubusercontent.com/BreCaspian/BreCaspian/main/profile-3d-contrib/profile-night-rainbow.svg)
+<!-- [GitHub 3D Contribution](https://raw.githubusercontent.com/BreCaspian/BreCaspian/main/profile-3d-contrib/profile-night-rainbow.svg) -->
 
 
 <!--
@@ -230,6 +230,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
 
 
 
