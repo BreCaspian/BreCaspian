@@ -1,8 +1,42 @@
+# 下面是我原来的README文件，相比现在我所使用的而言更加精美！
+
+
+
+---
+
+## GIF展示：
+
+![ezgif-2d43db8bc135f1](C:\Users\86193\Pictures\ezgif-2d43db8bc135f1.gif)
+
+
+
+---
+
+
+
+![屏幕截图 2025-06-05 155653](C:\Users\86193\Pictures\Screenshots\屏幕截图 2025-06-05 155653.png)
+
+![屏幕截图 2025-06-05 155713](C:\Users\86193\Pictures\Screenshots\屏幕截图 2025-06-05 155713.png)
+
+![屏幕截图 2025-06-05 155728](C:\Users\86193\Pictures\Screenshots\屏幕截图 2025-06-05 155728.png)
+
+
+
+---
+
+直接Copy下面的所有代码即可！
+
+---
+
 <div align="center">
 
 
-
   <!-- Knock Code Pictures -->
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/coding.gif" />
+    <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/developer.svg" height="225px" />
+    <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/coding.gif" />
+  </picture>
 
   <!-- for beauty -->
   <div>&nbsp;</div>
@@ -39,6 +73,8 @@
 
 
 <!-- Moon Emoji -->
+[![Moon.svg](https://moon-svg.minung.dev/moon.svg?size=200&theme=ray&rotate=148)](https://moon-svg.minung.dev)
+
 
 
 
@@ -88,6 +124,9 @@
 
 
 <!-- Alien Emoji -->
+<div style="display: flex; justify-content: center; align-items: center;">
+  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Alien.png" alt="Alien" width="250" height="250" />
+</div>
 
 
 
@@ -129,6 +168,16 @@
 
 
 <!-- GitHub Activity Graph GitHub 活动图 -->
+<table>
+  <tr>
+    <td>
+      <picture>
+        <source media="(prefers-color-scheme: dark)"  srcset="https://github-readme-activity-graph.vercel.app/graph?username=BreCaspian&theme=tokyo-night" />
+        <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=BreCaspian&theme=xcode" />
+        <img src="https://github-readme-activity-graph.vercel.app/graph?username=BreCaspian&theme=tokyo-night" />
+      </picture>
+  </tr>
+</table>
 
 
 
