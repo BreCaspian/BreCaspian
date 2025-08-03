@@ -115,11 +115,11 @@
 <!-- Blogs List -->
 # :orange_book: Latest Blog Posts :cactus:
 <!-- BLOG-POST-LIST:START -->
+- [Kazam产生.movie.mux后恢复视频为.mp4](https://blog.csdn.net/qq_60865111/article/details/149882889)
 - [在HP暗影精灵Ubuntu20.04上修复IntelAX211Wi-Fi不可用的全过程记录——系统安装以后没有WIFI图标&amp;无法使用无线网](https://blog.csdn.net/qq_60865111/article/details/149123368)
 - [工业表面缺陷检测开源数据集汇总](https://blog.csdn.net/qq_60865111/article/details/149000368)
 - [Git 推送失败解决教程——error: failed to push some refs to](https://blog.csdn.net/qq_60865111/article/details/148456311)
 - [Ubuntu下安装Intel MKL完整指南](https://blog.csdn.net/qq_60865111/article/details/147261872)
-- [将本地Blog提交到Github上](https://blog.csdn.net/qq_60865111/article/details/147056134)
 <!-- BLOG-POST-LIST:END -->
 
 
