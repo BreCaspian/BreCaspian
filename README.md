@@ -83,7 +83,7 @@
 
 
 <!-- Motto -->
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&quote=只要是个问题就一定能被解决，解决不了只有两种可能，一种是方法错误，另一种是能力不够。&author=Yaosir"  />
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&quote=只要是个问题就一定能被解决，解决不了只有两种可能，一种是方法错误，另一种是能力不够。&author=🍀"  />
 
 
 
