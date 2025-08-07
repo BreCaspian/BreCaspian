@@ -92,12 +92,6 @@
 
 
 
-<!-- Skills Emoji -->
-[![My Skills](https://skillicons.dev/icons?i=c,cpp,py,rust,matlab,linux,github,pytorch,tensorflow,opencv,git,stackoverflow,visualstudio,vscode,pycharm,anaconda,raspberrypi,docker,vim,gmail,gcp&theme=dark&perline=7)](https://skillicons.dev)
-
-
-
-
 
 
 <!-- Stats Words -->
@@ -106,9 +100,6 @@
 
 
 
-
-<!-- Stats Card -->
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=BreCaspian&show_icons=true&theme=radical)
 
 
 
@@ -130,11 +121,6 @@
 
 <!-- GitHub Activity Graph GitHub 活动图 -->
 
-
-
-
-<!-- 3D Contribution -->
-![GitHub 3D Contribution](https://raw.githubusercontent.com/BreCaspian/BreCaspian/main/profile-3d-contrib/profile-night-rainbow.svg)
 
 
 <!--
