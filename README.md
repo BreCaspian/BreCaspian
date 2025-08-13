@@ -95,7 +95,14 @@
 
 
 <!-- Stats Words -->
-![Metrics](github-metrics.svg)
+
+
+<div align="center">
+  <img src="github-metrics.svg" alt="Metrics" width="1200">
+</div>
+
+
+
 
 
 <div align="center">
