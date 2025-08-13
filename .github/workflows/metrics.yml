@@ -30,3 +30,31 @@ jobs:
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: Europe/London
+
+
+          #################################################
+          # 1) 语言统计（Languages）
+          #################################################
+          plugin_languages: yes
+          plugin_languages_sections: most-used  # 只显示“常用语言”
+          plugin_languages_limit: 12            # 最多展示 12 种
+          plugin_languages_details: lines, bytes
+          plugin_languages_recent_days: 14      # 近期活跃统计窗口
+          plugin_languages_recent_load: 500     # 扫描最近多少提交
+          plugin_languages_threshold: 0%        # 小语言也显示
+
+          #################################################
+          # 2) Issues & PRs（Overall issues and pull requests）
+          #################################################
+          plugin_followup: yes
+          plugin_followup_indepth: yes          # 展示 opened/closed/merged 等详细条
+          plugin_followup_sections: repositories # “On <你的名字>'s repositories”
+
+          #################################################
+          # 3) Coding habits + charts（最近写代码习惯）
+          #################################################
+          plugin_habits: yes
+          plugin_habits_charts: yes             # 打开两个小图（小时/星期）
+          plugin_habits_days: 14                # 统计最近 14 天
+          plugin_habits_from: 200               # 最多读取 200 条事件
+          plugin_habits_facts: no               # 不要“有趣事实”小句子
