@@ -91,7 +91,7 @@
 
 
 <!-- 右侧：Metrics 图（右浮动） -->
-<img src="github-metrics.svg" alt="Metrics" align="right" width="510">
+<img src="github-metrics.svg" alt="Metrics" align="right" width="480">
 
 <!-- 左侧标题（用 h3，GitHub 对 h3 不加横线） -->
 <h3>About Me</h3>
