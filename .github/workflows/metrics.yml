@@ -73,8 +73,21 @@ jobs:
           user: BreCaspian
           filename: github-metrics/habits.charts.svg
           base: ""
-          plugin_habits: yes
-          plugin_habits_charts: yes
+          plugin_habits: no
+          plugin_habits_charts: no
           plugin_habits_days: 14
           plugin_habits_from: 200
           config_timezone: Europe/London
+
+
+            # 2) Reactions（最近评论/讨论表情）
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: github-metrics/reactions.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: BreCaspian
+          template: classic
+          base: ""
+          config_timezone: Europe/London
+          plugin_reactions: yes
+          plugin_reactions_limit: 200
