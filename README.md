@@ -90,15 +90,31 @@
 <!-- Alien Emoji -->
 
 
+<!-- 右侧：Metrics 图（右浮动） -->
+<img src="github-metrics.svg" alt="Metrics" align="right" width="510">
+
+<!-- 左侧标题（用 h3，GitHub 对 h3 不加横线） -->
+<h3>About Me</h3>
+
+<ul>
+  <li>🤖 Passionate about Robotics</li>
+  <li>☕ Heavy Coffee Enthusiast</li>
+  <li>🕊️ Hoping for a Peaceful World</li>
+  <li>🌟 "Stay hungry, stay foolish." — Steve Jobs</li>
+</ul>
+
+<!-- 清除浮动（保险起见，多加几个换行也可以） -->
+<br><br>
+
+
+
+
+
 
 
 
 <!-- Stats Words -->
 
-
-<div align="center">
-  <img src="github-metrics.svg" alt="Metrics" width="700">
-</div>
 
 
 
