@@ -63,7 +63,7 @@ jobs:
           filename: github-metrics/repositories.pinned.svg
           base: ""
           plugin_repositories: yes
-          plugin_repositories_pinned: 6   # 想展示几个就改这里
+          plugin_repositories_pinned: 2   # 想展示几个就改这里
           config_timezone: Europe/London
 
       # 4) Coding habits + charts
@@ -74,7 +74,7 @@ jobs:
           filename: github-metrics/habits.charts.svg
           base: ""
           plugin_habits: yes
-          plugin_habits_charts: yes
+          plugin_habits_charts: no
           plugin_habits_days: 14
           plugin_habits_from: 200
           config_timezone: Europe/London
