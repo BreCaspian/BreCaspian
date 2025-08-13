@@ -119,6 +119,18 @@
 
 
 
+
+<!-- GitHub Metrics (Languages + Issues/PRs + Featured repos + Coding habits) -->
+<p align="center">
+  <img src="github-metrics.svg" alt="GitHub Metrics" />
+</p>
+
+
+
+
+
+
+
 <!-- GitHub Activity Graph GitHub 活动图 -->
 
 
