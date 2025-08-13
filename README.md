@@ -125,11 +125,10 @@
   <tr>
     <td><img src="https://github.com/BreCaspian/BreCaspian/blob/main/github-metrics/languages.indepth.svg" alt="languages" /></td>
     <td><img src="./github-metrics/reactions.svg" alt="reactions" /></td>
-    <td><img src="https://github.com/BreCaspian/BreCaspian/blob/main/github-metrics/followup.indepth.svg" alt="issues & prs" /></td>
   </tr>
   <tr>
+    <td><img src="https://github.com/BreCaspian/BreCaspian/blob/main/github-metrics/followup.indepth.svg" alt="issues & prs" /></td>
     <td><img src="https://github.com/BreCaspian/BreCaspian/blob/main/github-metrics/repositories.pinned.svg" alt="featured repos" /></td>
-    <td><img src="https://github.com/BreCaspian/BreCaspian/blob/main/github-metrics/habits.charts.svg" alt="coding habits" /></td>
   </tr>
 </table>
 </div>
