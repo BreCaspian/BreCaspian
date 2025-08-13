@@ -98,7 +98,18 @@
 ![Metrics](github-metrics.svg)
 
 
-
+<div align="center">
+<table>
+  <tr>
+    <td><img src="https://github.com/BreCaspian/BreCaspian/blob/main/github-metrics/languages.indepth.svg" alt="languages" /></td>
+    <td><img src="./github-metrics/reactions.svg" alt="reactions" /></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/BreCaspian/BreCaspian/blob/main/github-metrics/followup.indepth.svg" alt="issues & prs" /></td>
+    <td><img src="https://github.com/BreCaspian/BreCaspian/blob/main/github-metrics/repositories.pinned.svg" alt="featured repos" /></td>
+  </tr>
+</table>
+</div>
 
 
 
@@ -120,18 +131,7 @@
 
 
 
-<div align="center">
-<table>
-  <tr>
-    <td><img src="https://github.com/BreCaspian/BreCaspian/blob/main/github-metrics/languages.indepth.svg" alt="languages" /></td>
-    <td><img src="./github-metrics/reactions.svg" alt="reactions" /></td>
-  </tr>
-  <tr>
-    <td><img src="https://github.com/BreCaspian/BreCaspian/blob/main/github-metrics/followup.indepth.svg" alt="issues & prs" /></td>
-    <td><img src="https://github.com/BreCaspian/BreCaspian/blob/main/github-metrics/repositories.pinned.svg" alt="featured repos" /></td>
-  </tr>
-</table>
-</div>
+
 
 
 
