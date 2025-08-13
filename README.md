@@ -90,32 +90,6 @@
 <!-- Alien Emoji -->
 
 
-<table>
-  <tr>
-    <!-- 左：Metrics 大图 -->
-    <td width="60%" valign="top">
-      <img src="github-metrics.svg" alt="Metrics" width="100%">
-    </td>
-
-    <!-- 右：博客列表 -->
-    <td width="40%" valign="top">
-      <h2>📙 Latest Blog Posts 🌵</h2>
-      <ul>
-        <!-- BLOG-POST-LIST:START -->
-        <li><a href="https://blog.csdn.net/qq_60865111/article/details/149882889">Kazam产生.movie.mux后恢复视频为.mp4</a></li>
-        <li><a href="https://blog.csdn.net/qq_60865111/article/details/149123368">在HP暗影精灵Ubuntu20.04上修复IntelAX211Wi-Fi不可用的全过程记录——系统安装以后没有WIFI图标&amp;无法使用无线网</a></li>
-        <li><a href="https://blog.csdn.net/qq_60865111/article/details/149000368">工业表面缺陷检测开源数据集汇总</a></li>
-        <li><a href="https://blog.csdn.net/qq_60865111/article/details/148456311">Git 推送失败解决教程——error: failed to push some refs to</a></li>
-        <li><a href="https://blog.csdn.net/qq_60865111/article/details/147261872">Ubuntu下安装Intel MKL完整指南</a></li>
-        <!-- BLOG-POST-LIST:END -->
-      </ul>
-    </td>
-  </tr>
-</table>
-
-
-
-
 
 
 
