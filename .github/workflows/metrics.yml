@@ -80,7 +80,7 @@ jobs:
           config_timezone: Europe/London
 
 
-            # 2) Reactions（最近评论/讨论表情）
+      # 5) Reactions（最近评论/讨论表情）
       - uses: lowlighter/metrics@latest
         with:
           filename: github-metrics/reactions.svg
@@ -91,3 +91,4 @@ jobs:
           config_timezone: Europe/London
           plugin_reactions: yes
           plugin_reactions_limit: 200
+          plugin_reactions_details: percentage
