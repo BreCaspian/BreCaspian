@@ -86,7 +86,7 @@ _Robotics • Coffee • Peace_
 ---
 
 <p align="center">
-  💡 <i>Code is beautiful poetry</i>
+  🌸🌸 <i>Code is beautiful poetry</i> 🌸🌸
 </p>
 
 ---
