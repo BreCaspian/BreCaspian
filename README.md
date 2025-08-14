@@ -52,7 +52,7 @@ _Robotics • Coffee • Peace_
 
 ---
 
-## 📈 Detaile
+## 📈 GitHub Detaile
 
 <div align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
 
