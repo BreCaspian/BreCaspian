@@ -39,7 +39,7 @@ _Robotics • Coffee • Peace_
 
 ---
 
-## 📈 GitHub Detaile
+## 📈 GitHub Details
 
 <div align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
 
