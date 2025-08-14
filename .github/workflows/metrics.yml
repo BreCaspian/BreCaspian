@@ -90,3 +90,10 @@ jobs:
           plugin_reactions_limit: 200
           plugin_reactions_details: percentage
           config_border: no
+          config_background: 0d1117
+          config_css: |
+            :root{
+              --color-border-default: transparent;
+              --color-border-muted: transparent;
+            }
+            rect{ stroke: none !important; }
