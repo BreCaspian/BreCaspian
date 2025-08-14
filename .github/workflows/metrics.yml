@@ -44,14 +44,6 @@ jobs:
           plugin_languages_limit: 12
           config_timezone: Europe/London
           config_border: no
-          config_background: 0d1117
-          config_css: |
-            :root{
-              --color-border-default: transparent;
-              --color-border-muted: transparent;
-            }
-            rect{ stroke: none !important; }
-          
 
       # 2) Issues & PRs (followup indepth)
       - uses: lowlighter/metrics@latest
@@ -90,10 +82,3 @@ jobs:
           plugin_reactions_limit: 200
           plugin_reactions_details: percentage
           config_border: no
-          config_background: 0d1117
-          config_css: |
-            :root{
-              --color-border-default: transparent;
-              --color-border-muted: transparent;
-            }
-            rect{ stroke: none !important; }
