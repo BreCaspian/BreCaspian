@@ -1,78 +1,93 @@
+<!-- ===== HEADER ===== -->
 <div align="center">
 
+# 🍀 Welcome to **Yaosir's GitHub** 🍀  
+_Robotics • Coffee • Peace_
 
+<!-- Badges -->
+<p>
+  <a href="https://github.com/BreCaspian?tab=followers">
+    <img alt="Followers" src="https://img.shields.io/github/followers/BreCaspian?label=Followers&style=for-the-badge&color=6aa6f8&labelColor=1a1b27">
+  </a>
+  <a href="https://github.com/BreCaspian">
+    <img alt="Stars" src="https://img.shields.io/github/stars/BreCaspian?label=Stars&style=for-the-badge&color=f8d866&labelColor=1a1b27">
+  </a>
+</p>
 
-<h1 style="color: #FFA500;">Welcome to Yaosir's GitHub ! 🍀</h1>
+</div>
 
-
-
-![My GitHub stats](https://github-readme-stats.vercel.app/api?username=BreCaspian&theme=tokyonight&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=00000000)
-
-
-
-<!-- Alien Emoji -->
-
-
-<!-- 右侧：Metrics 图（右浮动） -->
-<img src="github-metrics.svg" alt="Metrics" align="right" width="480">
-
-<!-- 左侧标题（用 h3，GitHub 对 h3 不加横线） -->
-<h3>About Me</h3>
-
-<ul>
-  <li>🤖 Passionate about Robotics</li>
-  <li>☕ Heavy Coffee Enthusiast</li>
-  <li>🕊️ Hoping for a Peaceful World</li>
-  <li>🌟 "Stay hungry, stay foolish." — Steve Jobs</li>
-</ul>
-
-<!-- 清除浮动（保险起见，多加几个换行也可以） -->
-<br><br>
+---
 
 
 
 
+## 🧩 About Me
 
+- 🤖 Passionate about **Robotics**
+- ☕ Heavy **Coffee** Enthusiast
+- 🕊️ Believer in a **Peaceful World**
+- 🌟 *"Stay hungry, stay foolish." — Steve Jobs*
 
+---
 
-
-<!-- Stats Words -->
-
-
-
-
-
+## 📊 GitHub Overview
 
 <div align="center">
-<table>
-  <tr>
-    <td><img src="https://github.com/BreCaspian/BreCaspian/blob/main/github-metrics/languages.indepth.svg" alt="languages" /></td>
-    <td><img src="./github-metrics/reactions.svg" alt="reactions" /></td>
-  </tr>
-  <tr>
-    <td><img src="https://github.com/BreCaspian/BreCaspian/blob/main/github-metrics/followup.indepth.svg" alt="issues & prs" /></td>
-    <td><img src="https://github.com/BreCaspian/BreCaspian/blob/main/github-metrics/repositories.pinned.svg" alt="featured repos" /></td>
-  </tr>
-</table>
+  <table style="width:100%; border-collapse:collapse; border:none; border-spacing:0;">
+    <tr>
+      <td style="padding:0; border:none; vertical-align:top; width:50%;">
+        <img src="github-metrics.svg"
+             alt="GitHub Metrics"
+             style="max-width:100%; height:auto; display:block;" />
+      </td>
+      <td style="padding:0; border:none; vertical-align:top; width:50%;">
+        <img src="https://github-readme-stats.vercel.app/api?username=BreCaspian&theme=tokyonight&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=00000000"
+             alt="GitHub Stats"
+             style="max-width:100%; height:auto; display:block;" />
+      </td>
+    </tr>
+  </table>
 </div>
 
 
+---
 
+## 📈 Detaile
 
-<!-- Blogs List -->
-# :orange_book: Latest Blog Posts :cactus:
+<div align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+
+<img src="https://github.com/BreCaspian/BreCaspian/blob/main/github-metrics/languages.indepth.svg" alt="Languages" width="48%" />
+<img src="./github-metrics/reactions.svg" alt="Reactions" width="48%" />
+<img src="https://github.com/BreCaspian/BreCaspian/blob/main/github-metrics/followup.indepth.svg" alt="Issues & PRs" width="48%" />
+<img src="https://github.com/BreCaspian/BreCaspian/blob/main/github-metrics/repositories.pinned.svg" alt="Pinned Repos" width="48%" />
+
+</div>
+
+---
+
+## 📚 Latest Blog Posts
+
 <!-- BLOG-POST-LIST:START -->
-- [Kazam产生.movie.mux后恢复视频为.mp4](https://blog.csdn.net/qq_60865111/article/details/149882889)
-- [在HP暗影精灵Ubuntu20.04上修复IntelAX211Wi-Fi不可用的全过程记录——系统安装以后没有WIFI图标&amp;无法使用无线网](https://blog.csdn.net/qq_60865111/article/details/149123368)
-- [工业表面缺陷检测开源数据集汇总](https://blog.csdn.net/qq_60865111/article/details/149000368)
-- [Git 推送失败解决教程——error: failed to push some refs to](https://blog.csdn.net/qq_60865111/article/details/148456311)
-- [Ubuntu下安装Intel MKL完整指南](https://blog.csdn.net/qq_60865111/article/details/147261872)
+- 🛠️ [Kazam产生.movie.mux后恢复视频为.mp4](https://blog.csdn.net/qq_60865111/article/details/149882889)
+- 📶 [在HP暗影精灵Ubuntu20.04上修复IntelAX211Wi-Fi不可用的全过程记录](https://blog.csdn.net/qq_60865111/article/details/149123368)
+- 🏭 [工业表面缺陷检测开源数据集汇总](https://blog.csdn.net/qq_60865111/article/details/149000368)
+- 🔧 [Git 推送失败解决教程——error: failed to push some refs to](https://blog.csdn.net/qq_60865111/article/details/148456311)
+- 📚 [Ubuntu下安装Intel MKL完整指南](https://blog.csdn.net/qq_60865111/article/details/147261872)
 <!-- BLOG-POST-LIST:END -->
 
+---
 
-<!-- Award List -->
-![trophy](https://github-profile-trophy.vercel.app/?username=BreCaspian&row=1&column=5&theme=juicyfresh&no-frame=true&no-bg=true)
+## 🏆 Achievements
 
+<div align="center">
+<img src="https://github-profile-trophy.vercel.app/?username=BreCaspian&row=1&column=5&theme=juicyfresh&no-frame=true&no-bg=true" alt="GitHub Trophies"/>
+</div>
+
+---
+
+<p align="center">
+  💡 *Thanks for visiting!* If you like what you see, consider ⭐ starring a repo or following for updates.
+</p>
 
 
 
