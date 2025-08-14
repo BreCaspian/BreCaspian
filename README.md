@@ -86,8 +86,9 @@ _Robotics • Coffee • Peace_
 ---
 
 <p align="center">
-  💡 *Thanks for visiting!* If you like what you see, consider ⭐ starring a repo or following for updates.
+  💡 <i>Code is beautiful poetry</i>
 </p>
+
 
 
 
