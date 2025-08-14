@@ -43,7 +43,8 @@ jobs:
           plugin_languages_details: lines, bytes
           plugin_languages_limit: 12
           config_timezone: Europe/London
-          config_border: no
+          config_border: none
+          config_background: transparent
 
       # 2) Issues & PRs (followup indepth)
       - uses: lowlighter/metrics@latest
@@ -55,7 +56,8 @@ jobs:
           plugin_followup: yes
           plugin_followup_indepth: yes
           config_timezone: Europe/London
-          config_border: no
+          config_border: none
+          config_background: transparent
 
       # 3) Featured repositories (pinned)
       - uses: lowlighter/metrics@latest
@@ -67,8 +69,8 @@ jobs:
           plugin_repositories: yes
           plugin_repositories_pinned: 2   # 想展示几个就改这里
           config_timezone: Europe/London
-          config_border: no
-
+          config_border: none
+          config_background: transparent
       # 5) Reactions（最近评论/讨论表情）
       - uses: lowlighter/metrics@latest
         with:
@@ -81,4 +83,5 @@ jobs:
           plugin_reactions: yes
           plugin_reactions_limit: 200
           plugin_reactions_details: percentage
-          config_border: no
+          config_border: none
+          config_background: transparent
