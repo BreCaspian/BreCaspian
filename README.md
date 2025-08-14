@@ -1,7 +1,7 @@
 <!-- ===== HEADER ===== -->
 <div align="center">
 
-# 🍀 Welcome to **Yaosir's GitHub** 🍀  
+# 🕊️ Welcome to **Yaosir's GitHub** 🍀  
 _Robotics • Coffee • Peace_
 
 ---
