@@ -8,40 +8,45 @@ _Robotics • Coffee • Peace_
 
 </div>
 
+<div align="center">
+
 ## 🧩 About Me
 
-- 🤖 Passionate about **Robotics**
-- ☕ Heavy **Coffee** Enthusiast
-- 🕊️ Believer in a **Peaceful World**
-- 🌟 *"Stay hungry, stay foolish." — Steve Jobs*
+🤖 Passionate about **Robotics**  
+☕ Heavy **Coffee** Enthusiast  
+🕊️ Believer in a **Peaceful World**  
+🌟 *"Stay hungry, stay foolish." — Steve Jobs*
+
+</div>
 
 ---
+
+<div align="center">
 
 ## 📊 GitHub Overview
 
-<div align="center">
-  <table style="width:100%; border-collapse:collapse; border:none; border-spacing:0;">
-    <tr>
-      <td style="padding:0; border:none; vertical-align:top; width:50%;">
-        <img src="github-metrics.svg"
-             alt="GitHub Metrics"
-             style="max-width:100%; height:auto; display:block;" />
-      </td>
-      <td style="padding:0; border:none; vertical-align:top; width:50%;">
-        <img src="https://github-readme-stats.vercel.app/api?username=BreCaspian&theme=tokyonight&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=00000000"
-             alt="GitHub Stats"
-             style="max-width:100%; height:auto; display:block;" />
-      </td>
-    </tr>
-  </table>
+<table style="width:100%; border-collapse:collapse; border:none; border-spacing:0;">
+  <tr>
+    <td style="padding:0; border:none; vertical-align:top; width:50%;">
+      <img src="github-metrics.svg"
+           alt="GitHub Metrics"
+           style="max-width:100%; height:auto; display:block;" />
+    </td>
+    <td style="padding:0; border:none; vertical-align:top; width:50%;">
+      <img src="https://github-readme-stats.vercel.app/api?username=BreCaspian&theme=tokyonight&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=00000000"
+           alt="GitHub Stats"
+           style="max-width:100%; height:auto; display:block;" />
+    </td>
+  </tr>
+</table>
+
 </div>
 
+<div align="center">
 
 ---
 
-## 📈 GitHub Details
-
-<div align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
 
 <img src="https://github.com/BreCaspian/BreCaspian/blob/main/github-metrics/languages.indepth.svg" alt="Languages" width="48%" />
 <img src="./github-metrics/reactions.svg" alt="Reactions" width="48%" />
@@ -50,7 +55,11 @@ _Robotics • Coffee • Peace_
 
 </div>
 
+</div>
+
 ---
+
+<div align="center">
 
 ## 📚 Latest Blog Posts
 
@@ -62,12 +71,16 @@ _Robotics • Coffee • Peace_
 - [Ubuntu下安装Intel MKL完整指南](https://blog.csdn.net/qq_60865111/article/details/147261872)
 <!-- BLOG-POST-LIST:END -->
 
+</div>
+
 ---
+
+<div align="center">
 
 ## 🏆 Achievements
 
-<div align="center">
 <img src="https://github-profile-trophy.vercel.app/?username=BreCaspian&row=1&column=5&theme=juicyfresh&no-frame=true&no-bg=true" alt="GitHub Trophies"/>
+
 </div>
 
 ---
@@ -76,7 +89,7 @@ _Robotics • Coffee • Peace_
   💡 <i>Code is beautiful poetry</i>
 </p>
 
-
+---
 
 
 
