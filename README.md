@@ -2,7 +2,7 @@
 <div align="center">
 
 # 🕊️ Welcome to **Yaosir's GitHub** 🍀  
-_Robotics • Coffee • Peace_
+_ Robotique • Café • Paix _
 
 ---
 
