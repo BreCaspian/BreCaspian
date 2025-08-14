@@ -6,7 +6,8 @@
 
 
 
-![My GitHub stats](https://github-readme-stats.vercel.app/api?username=BreCaspian&theme=tokyonight&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117)
+![My GitHub stats](https://github-readme-stats.vercel.app/api?username=BreCaspian&theme=tokyonight&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=00000000)
+
 
 
 <!-- Alien Emoji -->
