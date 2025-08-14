@@ -4,22 +4,9 @@
 # 🍀 Welcome to **Yaosir's GitHub** 🍀  
 _Robotics • Coffee • Peace_
 
-<!-- Badges -->
-<p>
-  <a href="https://github.com/BreCaspian?tab=followers">
-    <img alt="Followers" src="https://img.shields.io/github/followers/BreCaspian?label=Followers&style=for-the-badge&color=6aa6f8&labelColor=1a1b27">
-  </a>
-  <a href="https://github.com/BreCaspian">
-    <img alt="Stars" src="https://img.shields.io/github/stars/BreCaspian?label=Stars&style=for-the-badge&color=f8d866&labelColor=1a1b27">
-  </a>
-</p>
-
-</div>
-
 ---
 
-
-
+</div>
 
 ## 🧩 About Me
 
