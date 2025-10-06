@@ -21,41 +21,31 @@
 
 ---
 
-<div align="center">
+<h2 align="center">🌏 Overview</h2>
 
-## 📊 GitHub Overview
-
-<table style="width:100%; border-collapse:collapse; border:none; border-spacing:0;">
+<table align="center" width="100%">
   <tr>
-    <td style="padding:0; border:none; vertical-align:top; width:50%;">
-      <img src="github-metrics.svg"
-           alt="GitHub Metrics"
-           style="max-width:100%; height:auto; display:block;" />
+    <!-- 左侧：一张图，跨两行 -->
+    <td width="50%" valign="top" rowspan="2">
+      <img src="https://raw.githubusercontent.com/BreCaspian/BreCaspian/main/github-metrics/followup.indepth.svg"
+           alt="Issues & PRs" width="100%">
     </td>
-    <td style="padding:0; border:none; vertical-align:top; width:50%;">
-      <img src="https://github-readme-stats.vercel.app/api?username=BreCaspian&theme=tokyonight&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=00000000"
-           alt="GitHub Stats"
-           style="max-width:100%; height:auto; display:block;" />
+    <!-- 右上：Languages -->
+    <td width="50%" valign="top">
+      <img src="https://raw.githubusercontent.com/BreCaspian/BreCaspian/main/github-metrics/languages.indepth.svg"
+           alt="Languages" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <!-- 右下：Reactions -->
+    <td width="50%" valign="top">
+      <img src="https://raw.githubusercontent.com/BreCaspian/BreCaspian/main/github-metrics/reactions.svg"
+           alt="Reactions" width="100%">
     </td>
   </tr>
 </table>
 
-</div>
 
-<div align="center">
-
----
-
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
-
-<img src="https://github.com/BreCaspian/BreCaspian/blob/main/github-metrics/languages.indepth.svg" alt="Languages" width="48%" />
-<img src="./github-metrics/reactions.svg" alt="Reactions" width="48%" />
-<img src="https://github.com/BreCaspian/BreCaspian/blob/main/github-metrics/followup.indepth.svg" alt="Issues & PRs" width="48%" />
-<img src="https://github.com/BreCaspian/BreCaspian/blob/main/github-metrics/repositories.pinned.svg" alt="Pinned Repos" width="48%" />
-
-</div>
-
-</div>
 
 ---
 
@@ -240,24 +230,55 @@ profile-3d-contrib/profile-gitblock.svg
 <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&quote=只要是个问题就一定能被解决，解决不了只有两种可能，一种是方法错误，另一种是能力不够。&author=🍀"  />
 
 
+<!--
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<div align="center">
+
+## 📊 GitHub Overview
+
+<table style="width:100%; border-collapse:collapse; border:none; border-spacing:0;">
+  <tr>
+    <td style="padding:0; border:none; vertical-align:top; width:50%;">
+      <img src="github-metrics.svg"
+           alt="GitHub Metrics"
+           style="max-width:100%; height:auto; display:block;" />
+    </td>
+    <td style="padding:0; border:none; vertical-align:top; width:50%;">
+      <img src="https://github-readme-stats.vercel.app/api?username=BreCaspian&theme=tokyonight&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=00000000"
+           alt="GitHub Stats"
+           style="max-width:100%; height:auto; display:block;" />
+    </td>
+  </tr>
+</table>
+
+</div>
+
+<div align="center">
+
+---
+
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+
+<img src="https://github.com/BreCaspian/BreCaspian/blob/main/github-metrics/languages.indepth.svg" alt="Languages" width="48%" />
+<img src="./github-metrics/reactions.svg" alt="Reactions" width="48%" />
+<img src="https://github.com/BreCaspian/BreCaspian/blob/main/github-metrics/followup.indepth.svg" alt="Issues & PRs" width="48%" />
+<img src="https://github.com/BreCaspian/BreCaspian/blob/main/github-metrics/repositories.pinned.svg" alt="Pinned Repos" width="48%" />
+
+</div>
+
+</div>
+
+---
+-->
 
 
 
 
 
-
-
+<!--
 ---------------------------------------------------------------------------------------------------------------------
 
-
-
-
-
-
-
-
  👋 
-
 
 Here are some ideas to get you started:
 
