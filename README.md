@@ -25,19 +25,10 @@
 
 <table align="center" width="100%">
   <tr>
-    <!-- 左侧：一张图，跨两行 -->
-    <td width="50%" valign="top" rowspan="2">
-      <img src="https://raw.githubusercontent.com/BreCaspian/BreCaspian/main/github-metrics/followup.indepth.svg"
-           alt="Issues & PRs" width="100%">
-    </td>
-    <!-- 右上：Languages -->
     <td width="50%" valign="top">
       <img src="https://raw.githubusercontent.com/BreCaspian/BreCaspian/main/github-metrics/languages.indepth.svg"
            alt="Languages" width="100%">
     </td>
-  </tr>
-  <tr>
-    <!-- 右下：Reactions -->
     <td width="50%" valign="top">
       <img src="https://raw.githubusercontent.com/BreCaspian/BreCaspian/main/github-metrics/reactions.svg"
            alt="Reactions" width="100%">
@@ -65,13 +56,6 @@
 
 ---
 
-<div align="center">
-
-## 🏆 Achievements
-
-<img src="https://github-profile-trophy-ten-xi.vercel.app/?username=BreCaspian&row=1&column=5&theme=juicyfresh&no-frame=true&no-bg=true" alt="GitHub Trophies"/>
-
-</div>
 
 ---
 
@@ -91,6 +75,19 @@
 
 <!-- GitHub Activity Graph GitHub 活动图 -->
 
+
+<!--
+---
+
+<div align="center">
+
+## 🏆 Achievements
+
+<img src="https://github-profile-trophy-ten-xi.vercel.app/?username=BreCaspian&row=1&column=5&theme=juicyfresh&no-frame=true&no-bg=true" alt="GitHub Trophies"/>
+
+</div>
+
+---
 
 
 <!--
