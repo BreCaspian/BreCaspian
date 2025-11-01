@@ -55,6 +55,15 @@
 </div>
 
 ---
+<div align="center">
+
+## 🏆 Achievements
+
+<img src="https://github-profile-trophy.vercel.app/?username=BreCaspian&row=1&column=5&theme=juicyfresh&no-frame=true&no-bg=true" alt="GitHub Trophies"/>
+
+</div>
+
+---
 
 <p align="center">
   🌸🌸 <i>Code is Beautiful Poetry</i> 🌸🌸
