@@ -1,4 +1,56 @@
+## About Me — Robotique • Café • Paix 🕊️
+
+Hi 👋 ！I am currently engaged in study and research at a **Robotics Laboratory**, focusing on:
+
+- **Computer Vision & LiDAR Perception**
+- **Robotic Perception & SLAM**
+
+> 🌟 *"Stay hungry, stay foolish."* — Steve Jobs
+
+---
+
+## Interests — Code is Beautiful Poetry  🍀
+
+- Robotics & Artifical Intelligent
+- Heavy Coffee Enthusiast 
+- Technical writing and knowledge sharing  
+- May the world enjoy lasting peace, free from war
+- Say no to animal abuse. Support animal protection laws.
+
+---
+## Knowledge Sharing 📚
+
+<!-- BLOG-POST-LIST:START -->
+- [万字长文详述三维空间刚体运动-SLAM入门必备](https://blog.csdn.net/qq_60865111/article/details/155645513)
+- [Kazam产生.movie.mux后恢复视频为.mp4](https://blog.csdn.net/qq_60865111/article/details/149882889)
+<!-- BLOG-POST-LIST:END -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ------------------------------------------------------------------  -->
+
 <!-- ===== HEADER ===== -->
+
+<!--
 <div align="center">
 
 # 🕊️ Welcome to **Yaosir's GitHub** 🍀  
@@ -36,25 +88,24 @@
   </tr>
 </table>
 
-
-
 ---
 
 <div align="center">
 
 ## 📚 Latest Blog Posts
 
-<!-- BLOG-POST-LIST:START -->
+[BLOG-POST-LIST:START]
 - [万字长文详述三维空间刚体运动-SLAM入门必备](https://blog.csdn.net/qq_60865111/article/details/155645513)
 - [Kazam产生.movie.mux后恢复视频为.mp4](https://blog.csdn.net/qq_60865111/article/details/149882889)
 - [在HP暗影精灵Ubuntu20.04上修复IntelAX211Wi-Fi不可用的全过程记录——系统安装以后没有WIFI图标&amp;无法使用无线网](https://blog.csdn.net/qq_60865111/article/details/149123368)
 - [工业表面缺陷检测开源数据集汇总](https://blog.csdn.net/qq_60865111/article/details/149000368)
 - [开源且完全没有审核限制的大型语言模型的概述](https://blog.csdn.net/qq_60865111/article/details/147001840)
-<!-- BLOG-POST-LIST:END -->
+[BLOG-POST-LIST:END]
 
 </div>
 
 ---
+
 <div align="center">
 
 ## 🏆 Achievements
@@ -68,11 +119,10 @@
 <p align="center">
   🌸🌸 <i>Code is Beautiful Poetry</i> 🌸🌸
 </p>
+-->
 
 
-
-
-
+----------------------------------------------------------------------------------
 
 
 
