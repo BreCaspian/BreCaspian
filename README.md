@@ -12,7 +12,7 @@ Hi 👋 ！I am currently engaged in study and research at a **Robotics Laborato
 ## Interests — Code is Beautiful Poetry 🕊️
 
 - Robotics & Artificial Intelligence
-- Heavy Coffee Enthusiast 
+- Heavy Coffee Enthusiast ☕
 - Technical writing and knowledge sharing  
 - May the world enjoy lasting peace, free from war
 - Say no to animal abuse. Support animal protection laws.
