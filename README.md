@@ -1,4 +1,4 @@
-## About Me — Robotique • Café • Paix 🕊️
+## About Me — Robotique • Café • Paix 🍀
 
 Hi 👋 ！I am currently engaged in study and research at a **Robotics Laboratory**, focusing on:
 
@@ -9,7 +9,7 @@ Hi 👋 ！I am currently engaged in study and research at a **Robotics Laborato
 
 ---
 
-## Interests — Code is Beautiful Poetry  🍀
+## Interests — Code is Beautiful Poetry 🕊️
 
 - Robotics & Artificial Intelligence
 - Heavy Coffee Enthusiast 
