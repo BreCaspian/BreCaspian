@@ -41,6 +41,21 @@ Hi 👋 ！I am currently engaged in study and research at a **Robotics Laborato
   <!-- Stats Words -->
   ![Metrics](github-metrics.svg)
 
+  <!-- Award List -->
+  ![trophy](https://github-profile-trophy.vercel.app/?username=BreCaspian&row=1&column=5&theme=juicyfresh&no-frame=true&no-bg=true)
+
+  <table align="center" width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <img src="https://raw.githubusercontent.com/BreCaspian/BreCaspian/main/github-metrics/languages.indepth.svg"
+           alt="Languages" width="100%">
+    </td>
+    <td width="50%" valign="top">
+      <img src="https://raw.githubusercontent.com/BreCaspian/BreCaspian/main/github-metrics/reactions.svg"
+           alt="Reactions" width="100%">
+    </td>
+  </tr>
+</table>
 
   <!-- 3D Contribution -->
   ![GitHub 3D Contribution](https://raw.githubusercontent.com/BreCaspian/BreCaspian/main/profile-3d-contrib/profile-night-rainbow.svg)
