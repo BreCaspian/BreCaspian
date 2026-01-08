@@ -3,7 +3,7 @@
 Hi 👋 ！I am currently engaged in study and research at a **Robotics Laboratory**, focusing on:
 
 - **Computer Vision & LiDAR Perception**
-- **Robotic Perception & SLAM**
+- **SLAM & Robotic Perception**
 
 > 🌟 *"Stay hungry, stay foolish."* — Steve Jobs
 
