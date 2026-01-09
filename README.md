@@ -41,9 +41,6 @@ Hi 👋 ！I am currently engaged in study and research at a **Robotics Laborato
   <!-- Stats Words -->
   ![Metrics](github-metrics.svg)
 
-  <!-- Award List -->
-  ![trophy](https://github-profile-trophy.vercel.app/?username=BreCaspian&row=1&column=5&theme=juicyfresh&no-frame=true&no-bg=true)
-
   <table align="center" width="100%">
   <tr>
     <td width="50%" valign="top">
