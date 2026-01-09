@@ -77,10 +77,10 @@
                                     </svg>
                                     <div class="name">
                                         <span>BreCaspian/TRTInferX</span>
-                                        <span>created 14 hours ago</span>
+                                        <span>created 16 hours ago</span>
                                     </div>
                                 </div>
-                                <div class="field description">TRTInferX: High-performance TensorRT inference for YOLOv11 (FP16/INT8, static/dynamic batch), built for NCST HORIZON RoboMaster 2026 Radar &amp; anti-UAV tracking.</div>
+                                <div class="field description">TRTInferX—High Prformance TensorRT Inference for YOLOv11. Built for NCST HORIZON RoboMaster 2026 Radar Localization and Anti UAV Laser Tracking.</div>
                                 <div class="field infos">
                                     <div class="language">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
