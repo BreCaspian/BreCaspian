@@ -19,8 +19,7 @@ Hi 👋 ！I am currently engaged in study and research at a **Robotics Laborato
 
 ---
 
-## More Info 🧩  ![](https://komarev.com/ghpvc/?username=BreCaspian&color=brightgreen)
-
+## More Info 🧩    ![](https://komarev.com/ghpvc/?username=BreCaspian&color=brightgreen)  
 <details>
   <summary><strong>View Statistics and Visualizations</strong></summary>
 
