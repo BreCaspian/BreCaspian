@@ -1,4 +1,4 @@
-## About Me — Robotique • Café • Paix 🍀 
+## About Me — Robotique • Café • Paix 🍀 ![](https://komarev.com/ghpvc/?username=BreCaspian&color=brightgreen)  
 
 Hi 👋 ！I am currently engaged in study and research at a **Robotics Laboratory**, focusing on:
 
@@ -19,7 +19,7 @@ Hi 👋 ！I am currently engaged in study and research at a **Robotics Laborato
 
 ---
 
-## More Info — ![](https://komarev.com/ghpvc/?username=BreCaspian&color=brightgreen)  
+## More Info 🐍
 <details>
   <summary><strong>View Statistics and Visualizations</strong></summary>
 
