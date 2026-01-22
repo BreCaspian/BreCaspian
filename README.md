@@ -9,7 +9,7 @@ Hi 👋 ！I am currently engaged in study and research at a **Robotics Laborato
 
 ---
 
-## Interests — Code is Beautiful Poetry 🕊️
+## Interests — Code is Beautiful Poetry 🕊️ [![Donate](https://img.shields.io/badge/🌍%20Donate-UNICEF-blue)](https://donate.unicef.org.hk/zh-hant/one-time&HAC&1500/)
 
 - Robotics & Artificial Intelligence
 - Heavy Coffee Enthusiast ☕
