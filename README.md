@@ -52,9 +52,9 @@ Hi 👋 ！I am currently engaged in study and research at a **Robotics Laborato
   <!-- 3D Contribution -->
   ![GitHub 3D Contribution](https://raw.githubusercontent.com/BreCaspian/BreCaspian/main/profile-3d-contrib/profile-night-rainbow.svg)
 
+  <h2 align="center"><strong><em>安得广厦千万间，大庇天下寒士俱欢颜</em></strong></h2>
+
 </details>
-
-
 
 
 
