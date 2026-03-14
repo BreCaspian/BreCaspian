@@ -25,8 +25,16 @@ Hi 👋 ！I am currently engaged in study and research at a **Robotics Laborato
 
   <br/>
 
-  <!-- Stats Words -->
-  ![Metrics](github-metrics.svg)
+  <table align="center">
+    <tr>
+      <td valign="middle" width="50%">
+        <img src="github-metrics.svg" alt="Metrics" width="100%" />
+      </td>
+      <td valign="middle" width="50%">
+        <img src="https://github-readme-stats.vercel.app/api?username=BreCaspian&show_icons=true&theme=radical" alt="GitHub stats" width="100%" />
+      </td>
+    </tr>
+  </table>
 
   <table align="center" width="100%">
   <tr>
