@@ -22,32 +22,37 @@ Hi 👋 ！I am currently engaged in study and research at a **Robotics Laborato
 ## More Info 🐍
 <details>
   <summary><strong>View Statistics and Visualizations</strong></summary>
-
   <br/>
 
-  <table align="center">
+  <table align="center" width="100%">
     <tr>
-      <td valign="middle" width="50%">
-        <img src="github-metrics.svg" alt="Metrics" width="100%" />
+      <td width="50%" valign="top">
+        <img src="github-metrics.svg"
+             alt="Metrics"
+             style="display:block; width:100%; height:300px; object-fit:contain;" />
       </td>
-      <td valign="middle" width="50%">
-        <img src="https://github-readme-stats.vercel.app/api?username=BreCaspian&show_icons=true&theme=radical" alt="GitHub stats" width="100%" />
+      <td width="50%" valign="top">
+        <img src="https://github-readme-stats-zeta-nine-75.vercel.app/api?username=BreCaspian&rank_icon=github&theme=transparent&hide_border=true"
+             alt="BreCaspian"
+             style="display:block; width:100%; height:300px; object-fit:contain;" />
       </td>
     </tr>
   </table>
 
   <table align="center" width="100%">
-  <tr>
-    <td width="50%" valign="top">
-      <img src="https://raw.githubusercontent.com/BreCaspian/BreCaspian/main/github-metrics/languages.indepth.svg"
-           alt="Languages" width="100%">
-    </td>
-    <td width="50%" valign="top">
-      <img src="https://raw.githubusercontent.com/BreCaspian/BreCaspian/main/github-metrics/reactions.svg"
-           alt="Reactions" width="100%">
-    </td>
-  </tr>
-</table>
+    <tr>
+      <td width="50%" valign="middle" align="center" height="160">
+        <img src="https://raw.githubusercontent.com/BreCaspian/BreCaspian/main/github-metrics/languages.indepth.svg"
+             alt="Languages"
+             style="display:block; max-width:100%; max-height:160px;" />
+      </td>
+      <td width="50%" valign="middle" align="center" height="160">
+        <img src="https://raw.githubusercontent.com/BreCaspian/BreCaspian/main/github-metrics/reactions.svg"
+             alt="Reactions"
+             style="display:block; max-width:100%; max-height:160px;" />
+      </td>
+    </tr>
+  </table>
 
   <!-- 3D Contribution -->
   ![GitHub 3D Contribution](https://raw.githubusercontent.com/BreCaspian/BreCaspian/main/profile-3d-contrib/profile-night-rainbow.svg)
