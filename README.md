@@ -2,7 +2,7 @@
 
 Hi 👋 ！I am currently engaged in study and research at a **Robotics Laboratory**, focusing on:
 
-- **Computer Vision & Deep Learning & Reinforcement Learning**
+- **Computer Vision & Reinforcement Learning & Neural Field Theory**
 - **SLAM & LiDAR Perception & Robotic Perception**
 
 > 🌟 *"Stay hungry, stay foolish."* — Steve Jobs
