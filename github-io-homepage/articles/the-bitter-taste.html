@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="The Bitter Taste, a bilingual essay by Yuzhuo YAO."
+    />
+    <title>The Bitter Taste / Yuzhuo YAO</title>
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <main class="page article-page">
+      <nav class="article-nav" aria-label="Article navigation">
+        <a href="../index.html">Back to home</a>
+      </nav>
+
+      <header class="essay-header">
+        <h1>The Bitter Taste</h1>
+        <p class="essay-subtitle">
+          On research taste, long-termism, and real academic judgment.
+        </p>
+        <p class="essay-meta">June 8, 2026 21:08 / Yuzhuo YAO</p>
+        <div class="language-switch" aria-label="Language switch">
+          <a href="#zh">中文</a>
+          <span>/</span>
+          <a href="#en">English</a>
+        </div>
+      </header>
+
+      <article id="zh" class="essay lang-section" lang="zh-CN">
+        <h2>关于 research taste、长期主义和真正的学术判断</h2>
+
+        <p>
+          Rich Sutton 有一篇很有名的文章，叫 <em>The Bitter Lesson</em>。
+          那篇文章讲的是人工智能历史中反复出现的一条苦涩规律：长期来看，真正推动领域前进的，往往不是人类精心设计的领域知识，而是能够利用大规模计算的通用方法。搜索、学习、规模、算力，这些看起来不够聪明的东西，最终一次又一次击败了人类手工注入的这些自认为的聪明结构。
+        </p>
+        <p>
+          它之所以 bitter，是因为它让研究者难堪。我们总是希望自己的洞察、结构、先验、审美能够直接嵌入系统，让系统因为我们的聪明而变强。但历史经常告诉我们：真正持久的进步，来自那些能随着数据、算力和环境交互持续变强的方法。
+        </p>
+        <p>
+          最近我一直在想另一个类似的问题：对于一个真正的学者，或者真正的研究者来说，什么才算是好的 taste？也许这也有一条 bitter lesson。
+        </p>
+        <p>
+          因为好的 taste 不只是知道什么方向热门，也不是熟练掌握一堆新名词。好的 taste 是知道什么问题值得花生命去思考，什么解法有可能留下来，什么东西只是短期的热闹，什么东西可能在很多年后仍然被人使用、讨论、复现、继承。
+        </p>
+        <blockquote>
+          研究者不能只问“这个能不能发”，还要问：这个问题真的重要吗？这个方法真的干净吗？这个结果真的说明了什么吗？<strong>五年以后，还会有人在乎吗？</strong>
+        </blockquote>
+
+        <h3>一、好的 taste 首先是分辨问题的能力</h3>
+        <p>
+          差的 taste 经常追逐看起来像问题的问题。比如：这个 benchmark 还能不能刷 0.3？这个模块能不能换成 attention、diffusion、LLM？这个 trick 能不能包装成一篇 paper？
+        </p>
+        <p>
+          这些问题不一定完全没有价值。很多工程进步确实来自细节优化。但如果一个研究者长期只被这种问题驱动，他就很容易困在局部指标里。
+        </p>
+        <p>
+          好的 taste 会问更底层的问题：<strong>这个领域现在真正卡在哪里？如果这个问题解决了，会不会改变别人做事的方式？这个现象背后有没有更一般的规律？这个问题是不是五年后还值得被记住？</strong>
+        </p>
+        <p>
+          以 ResNet 为例，它伟大不只是因为 ImageNet 准确率高，而是因为它切中了深度网络训练中的核心瓶颈：网络变深以后，为什么反而更难优化？有没有一种简单的结构，让深层网络更容易学习有效表示？
+        </p>
+        <p>
+          残差连接本身看起来极其简单，但它改变了后来深度网络架构设计的默认范式。这就是 taste：不是盯着表面指标，而是看见底层阻塞点。
+        </p>
+
+        <h3>二、好的 taste 偏爱简单，但不是肤浅</h3>
+        <p>
+          真正好的 research taste 通常偏爱 simplicity。不是因为简单显得优雅，而是因为<strong>简单的东西更容易被理解、复现、扩展、迁移，也更可能变成领域的基础设施。</strong>
+        </p>
+        <blockquote>
+          问题很大，洞察很准，方法很短，影响很长。
+        </blockquote>
+        <p>
+          坏的研究则经常是另一种味道：问题很小，方法很复杂，实验很多，洞察很少。很多初学者会把复杂误认为高级。堆模块、堆公式、堆 ablation、堆术语，最后论文看起来很满，但核心 idea 很薄。
+        </p>
+        <p>
+          真正强的工作往往可以被一句话说清楚：学 residual，而不是直接学完整映射；用 masked reconstruction 学视觉表示；用 contrastive learning 从无标签数据中学 representation；让 agent 通过 trial-and-error 优化长期回报。
+        </p>
+        <p>
+          一句话能说清楚，不代表容易想到。恰恰相反，把复杂问题压缩成一个干净的 idea，是很高的能力。这也是为什么 simplicity 本身就是一种研究审美。它不是懒惰，不是浅薄，而是对本质的压缩能力。
+        </p>
+
+        <h3>三、好的 taste 关心 mechanism，而不只是 performance</h3>
+        <p>
+          差的 taste 只问一句话：涨点了吗？好的 taste 会继续追问：为什么涨？在什么条件下涨？什么时候不涨？这个结果说明了什么机制？它解决了本质问题，还是只是在 exploiting benchmark artifact？
+        </p>
+        <p>
+          尤其在 CV、DL、RL 里，这一点非常重要。现在很多东西都可以靠 scale、数据、算力和工程堆出来。一个方法 works，并不自动意味着我们理解了它。一个指标上涨，也不自动意味着一个知识被建立起来。
+        </p>
+        <blockquote>
+          实验结果只是 evidence。mechanism 才可能变成 knowledge。
+        </blockquote>
+        <p>
+          真正有 taste 的研究者不会满足于“它有效”。他会追问：它为什么有效？这个现象能不能被抽象成更一般的原则？这个原则能不能指导下一个系统设计？研究不是 Kaggle leaderboard。<strong>研究的目标不是让一个数字单独变高，而是让人类对一个问题的理解变深。</strong>
+        </p>
+
+        <h3>四、好的 taste 能区分 incremental improvement 和 conceptual advance</h3>
+        <p>
+          不是所有小提升都没价值。很多重要系统都需要大量 incremental work 才能稳定、可用、可复现。但有 taste 的研究者知道，不同工作的重量是不一样的。
+        </p>
+        <p>
+          一个工作可以是在 COCO 上 mAP +0.4；另一个工作可能是提出一种让实例分割任务被更统一建模的框架。前者可能能发，后者可能能改变范式。
+        </p>
+        <p>
+          好的 taste 会偏向能产生 conceptual advance 的问题。也就是说，一个工作不只是多一个结果，而是多一种看问题的方式。真正好的研究经常会让后来的研究者说：原来可以这样想。
+        </p>
+        <p>
+          不是“原来可以这样调参”，不是“原来可以这样堆模块”，而是“原来可以这样想”。这才是研究里最珍贵的东西之一：<strong>提供一种新的 mental model。</strong>
+        </p>
+
+        <h3>五、好的 taste 有抽象能力：从一个任务里看到一类问题</h3>
+        <p>
+          普通研究者看到的是一个 dataset、一个 task、一个 metric。有 taste 的研究者看到的是更深的结构：optimization problem、representation problem、generalization problem、credit assignment problem、scaling problem、alignment problem、data distribution problem、embodiment problem。
+        </p>
+        <p>
+          比如做 RL，不只是“让机器人把杯子拿起来”。更深的问题可能是：sparse reward 下如何做 credit assignment？sim-to-real 的 distribution shift 怎么处理？exploration 和 exploitation 如何平衡？policy 如何获得 compositional generalization？offline data 里如何避免 extrapolation error？
+        </p>
+        <p>
+          这叫从具体系统中看见一般性问题。好的 taste 不是飘在空中讲大词，不是空泛地说“我要研究 intelligence”。真正好的 taste 是能在一个具体任务、具体模型、具体失败现象里，看见可以迁移到其他地方的问题结构。
+        </p>
+        <p>
+          <strong>研究者的抽象能力，决定了他是否只能解决一个局部任务，还是能推进一类问题。</strong>
+        </p>
+
+        <h3>六、好的 taste 有时间尺度感</h3>
+        <p>
+          很多热点会消失，很多 benchmark 会过时，很多 fancy architecture 会被替换，很多现在看起来很酷的东西，几年后可能只剩一行 citation。但有些问题长期存在。
+        </p>
+        <p>
+          我们如何学习有用的表示？模型如何在分布外泛化？agent 如何从交互中学习？如何让优化目标和真实世界目标对齐？系统如何随着数据、算力和反馈继续扩展？模型如何变得可解释、鲁棒、高效、可控？
+        </p>
+        <p>
+          好的 taste 有一种历史感。它知道今天的技术细节会变，但底层问题会反复出现。所以真正强的研究者不会只问“今年什么最火”，还会问：这个问题在机器学习历史里处在哪条线索上？它和以前的问题有什么连续性？它是不是只是换了名字的老问题？这次有什么 genuinely new 的条件，比如 scale、data、hardware、interface？
+        </p>
+        <p>
+          没有历史感的人容易被热点牵着走。有历史感的人更容易看见真正的机会。这也是 <em>The Bitter Lesson</em> 给人的启发：<strong>真正值得押注的东西，往往不是短期最聪明的结构，而是长期最能利用趋势的机制。</strong>
+        </p>
+
+        <h3>七、好的 taste 审美上讨厌“脏东西”</h3>
+        <p>
+          这里的“脏”不是道德攻击，而是一种研究上的不适感。有 taste 的人通常会本能地不喜欢这些东西：过度调参才能成立，只在一个 benchmark 上有效，方法复杂但没有解释，ablation 做了一堆但没有结论，claim 很大但 evidence 很弱，实验设置不公平，baseline 故意选弱，论文写得很玄但核心很空。
+        </p>
+        <p>
+          好的 taste 包含一种 intellectual cleanliness。不是说所有研究都必须完美。现实中的研究经常是 messy 的，实验会失败，系统会有 bug，结果会有 variance，理论会有漏洞。但真正的研究者至少要知道哪里是不干净的，不能自欺欺人。
+        </p>
+        <p>
+          他会对自己的结果很苛刻：这个 improvement 是真的吗？是不是 seed variance？是不是数据泄漏？是不是 baseline 没调好？是不是只对这个 setting 有效？我是不是在 overclaim？
+        </p>
+        <p>
+          这其实是学术人格的一部分。<strong>好的 taste 不只是审美问题，也是诚实问题。</strong>
+        </p>
+
+        <h3>八、好的 taste 是资源分配能力</h3>
+        <p>
+          研究不是无限时间游戏。一个人的生命、精力、计算资源、合作机会、时代窗口，都是有限的。所以好的 taste 很大程度上是资源分配能力。
+        </p>
+        <p>
+          一个有 taste 的研究者会判断：这个问题重要吗？我现在有能力推进吗？如果做成了，价值有多大？失败了，我能学到什么？这个方向是不是拥挤到只剩工程竞赛？有没有被别人忽视但很根本的角度？
+        </p>
+        <p>
+          很多初学者以为 taste 是“选一个很牛的方向”。其实 taste 更像是：<strong>在你当前能力、资源、时代背景下，选一个既有意义又有可能被你推进的问题。</strong>
+        </p>
+        <p>
+          这很难。太小的问题没有价值，太大的问题做不动，太热的问题可能已经拥挤到只剩算力竞赛，太冷的问题可能是因为它真的不重要，或者条件还不成熟。好的 taste 是在这些 tension 之间找到一个位置。
+        </p>
+
+        <h3>九、好的 taste 能把东西讲清楚</h3>
+        <p>
+          一个研究者如果真的理解一个东西，通常能把它讲清楚。不是把所有细节都省掉，而是能分层：一句话讲 intuition，一段话讲 method，一页纸讲 formulation，一组实验讲 evidence，一个 limitation 讲边界。
+        </p>
+        <p>
+          好的 taste 也体现在 writing 和 presentation 里。差的论文常常让人觉得：你用了很多术语，但我不知道你到底解决了什么。好的论文则会让人觉得：这个问题以前我模糊地知道，现在我突然看清楚了。
+        </p>
+        <p>
+          这也是为什么一些优秀的研究者和写作者有很大影响力。他们不只是懂，还能把复杂东西组织成别人能吸收的知识结构。<strong>能讲清楚，不是研究之外的附加能力。</strong>它本身就是研究理解的一部分。
+        </p>
+
+        <h3>十、好的 taste 对“美”有感觉，但不被美骗</h3>
+        <p>
+          研究里确实有美感。好的方法经常有这些特征：形式简单，动机自然，假设清楚，结果强，适用范围广，失败模式可解释。
+        </p>
+        <p>
+          但是 taste 不是只追求 elegant。有些 elegant idea 是错的。有些 ugly engineering 暂时很有用。有些看起来不够优雅的系统，可能正站在长期趋势上。有些非常漂亮的理论，可能根本解释不了真实现象。
+        </p>
+        <blockquote>
+          欣赏 elegance，但服从 evidence。喜欢 simplicity，但不牺牲 truth。追求 generality，但不空谈 generality。
+        </blockquote>
+        <p>
+          真正的学者不是文艺地迷恋漂亮想法，而是同时有审美和纪律。这也是 bitter 的地方。因为很多时候，你喜欢的东西不一定是真的；你觉得聪明的东西不一定有用；你觉得优雅的东西不一定能 scale；你亲手设计的结构，可能会被一个更通用、更粗暴、更可扩展的方法超过。
+        </p>
+        <p>
+          <strong>好的 taste 不只是知道什么美，也要能承认什么是真的。</strong>
+        </p>
+
+        <h3>什么是坏 taste？</h3>
+        <p>
+          坏 taste 并不只是“水平低”。更准确地说，坏 taste 是判断力被错误目标牵引。典型的坏 taste 包括：<strong>追热点不追问题，追复杂不追本质，追指标不追理解，追发表不追贡献，追包装不追诚实，追“看起来高级”不追“真的有用”。</strong>
+        </p>
+        <p>
+          比如看到 LLM 火，就把 LLM 硬塞进所有题目；看到 diffusion 火，就把 diffusion 用到不需要 diffusion 的地方；看到 transformer 火，就觉得所有 CNN、control、classical method 都低级。这不是 taste，这是 trend chasing。
+        </p>
+        <p>
+          好的 taste 不是反对热点。很多热点之所以热，确实是因为那里有真正的新条件、新能力、新问题。<strong>但好的 taste 是即使在热点里，也能看出什么是本质问题，什么只是噪音。</strong>
+        </p>
+
+        <h3>初学者如何训练 taste？</h3>
+        <p>
+          对于还在积累阶段的人来说，不需要一开始就拥有大师级 taste。但可以训练自己每看一篇论文都问这些问题：这篇论文真正解决的问题是什么？这个问题为什么重要？它的核心 idea 能不能一句话说清楚？这个 idea 为什么以前没人这样做，或者为什么现在才可行？它的实验到底证明了什么，没有证明什么？它的局限在哪里？五年后这篇论文还会被记住吗？如果会，是因为什么？我能不能把这个 idea 用到另一个 setting？
+        </p>
+        <p>
+          这套问题问多了，taste 会慢慢长出来。<strong>taste 不是天生的神秘审美，它是通过大量阅读、复现、失败、比较、反思形成的判断力。</strong>
+        </p>
+        <p>
+          也许一开始你只能看出“这个方法涨点了”。后来你会慢慢看出“这个方法为什么涨”。再后来你会开始判断“这个问题值不值得做”。最后你才可能形成自己的研究直觉：<strong>什么东西是真的，什么东西是空的，什么东西也许会留下来。</strong>
+        </p>
+
+        <h3>结语：The Bitter Taste</h3>
+        <p>
+          真正好的 research taste，大概就是：选择重要而真实的问题，用尽可能简单、诚实、可检验、可复用的方式推进它，并且清楚知道自己的贡献边界。
+        </p>
+        <p>
+          这听起来很朴素，但做起来很难。因为它要求研究者长期对抗很多诱惑：热点的诱惑，复杂性的诱惑，指标的诱惑，发表的诱惑，包装的诱惑，自我欺骗的诱惑。
+        </p>
+        <p>
+          所以 taste 是 bitter 的。它苦在你必须承认：不是所有你喜欢的想法都重要，不是所有你设计的结构都能留下，不是所有漂亮的实验都说明了真问题，不是所有发表出来的东西都真正推进了理解。
+        </p>
+        <p>
+          但它也正因为苦，所以珍贵。好的 taste 不是让一个人显得聪明，而是让一个人逐渐接近真正的研究状态：<strong>看见真实问题，尊重长期趋势，偏爱干净解法，服从证据，克制表达，诚实面对贡献和局限。</strong>
+        </p>
+        <p>
+          也许一个人一开始没有论文，没有成果，没有影响力，甚至没有资格谈什么“大师级 taste”。但他仍然可以从每一个小项目、每一篇 paper note、每一次复现、每一次失败实验开始练习：<strong>这个问题真实吗？我的解法干净吗？我的实验诚实吗？我的结论克制吗？别人看了能不能获得一点点新理解？</strong>
+        </p>
+        <p>
+          能长期这样训练的人，才慢慢接近真正研究者的状态。<strong>这就是 <em>The Bitter Taste</em>。</strong>
+        </p>
+      </article>
+
+      <article id="en" class="essay lang-section" lang="en">
+        <h2>On Research Taste, Long-Termism, and Real Academic Judgment</h2>
+
+        <p>
+          Rich Sutton has a famous essay called <em>The Bitter Lesson</em>. It describes a bitter pattern that has appeared repeatedly in the history of artificial intelligence: in the long run, what truly pushes the field forward is often not carefully hand-designed domain knowledge, but general methods that can exploit computation at scale. Search, learning, scale, and compute may look less “clever”, yet they have repeatedly defeated clever structures injected by humans.
+        </p>
+        <p>
+          The lesson is bitter because it embarrasses researchers. We want our insights, structures, priors, and aesthetics to be embedded directly into systems, and we want those systems to become stronger because of our cleverness. But history often says otherwise: durable progress comes from methods that continue to improve with data, compute, and interaction with the environment.
+        </p>
+        <p>
+          Recently I have been thinking about a similar question: for a real scholar, or a real researcher, what counts as good taste? Perhaps there is a bitter lesson here as well.
+        </p>
+        <p>
+          Good taste is not knowing what is fashionable, nor knowing which topics are crowded at NeurIPS, ICLR, or CVPR this year. It is not the ability to recite a list of new terms. Good taste is knowing which problems are worth spending a life thinking about, which solutions may remain, which things are only short-term excitement, and which ideas may still be used, discussed, reproduced, and inherited many years later.
+        </p>
+        <blockquote>
+          A researcher should not only ask, “Can this be published?” The harder questions are: Is this problem truly important? Is this method clean? What does this result actually show? <strong>Will anyone still care five years from now?</strong>
+        </blockquote>
+
+        <h3>1. Good Taste Begins With the Ability to Recognize Problems</h3>
+        <p>
+          Bad taste often chases problems that only look like problems: can this benchmark be improved by 0.3? Can this module be replaced with attention, diffusion, or an LLM? Can this trick be packaged into a paper?
+        </p>
+        <p>
+          These questions are not completely worthless. Many engineering advances do come from detailed optimization. But if a researcher is driven only by this kind of question for long enough, they can easily become trapped inside local metrics.
+        </p>
+        <p>
+          Good taste asks deeper questions: <strong>Where is the field truly stuck? If this problem is solved, will it change how others work? Is there a more general principle behind this phenomenon? Is this problem still worth remembering five years from now?</strong>
+        </p>
+        <p>
+          ResNet is a good example. Its greatness is not only that it achieved strong ImageNet accuracy. It touched a core bottleneck in training deep networks: why does optimization become harder when networks get deeper? Is there a simple structure that makes deep networks learn useful representations more easily?
+        </p>
+        <p>
+          The residual connection itself is almost embarrassingly simple, yet it changed the default paradigm of deep network architecture design. That is taste: not staring at surface-level numbers, but seeing the underlying bottleneck.
+        </p>
+
+        <h3>2. Good Taste Prefers Simplicity, But Not Shallowness</h3>
+        <p>
+          Real research taste usually prefers simplicity. Not because simplicity looks elegant, but because <strong>simple things are easier to understand, reproduce, extend, transfer, and turn into infrastructure for the field.</strong>
+        </p>
+        <blockquote>
+          A large problem, a precise insight, a short method, and a long influence.
+        </blockquote>
+        <p>
+          Bad research often has the opposite flavor: a small problem, a complicated method, many experiments, and little insight. Beginners often mistake complexity for sophistication. They stack modules, formulas, ablations, and terminology until the paper looks full, while the core idea remains thin.
+        </p>
+        <p>
+          Truly strong work can often be explained in one sentence: learn residuals instead of full mappings; use masked reconstruction to learn visual representations; learn representations from unlabeled data through contrastive learning; let an agent optimize long-term return through trial and error.
+        </p>
+        <p>
+          Being explainable in one sentence does not mean an idea was easy to find. Quite the opposite: compressing a complex problem into a clean idea is a high-level ability. Simplicity is not laziness or shallowness. It is the ability to compress essence.
+        </p>
+
+        <h3>3. Good Taste Cares About Mechanism, Not Only Performance</h3>
+        <p>
+          Bad taste asks only one question: did the number go up? Good taste continues: why did it go up? Under what conditions? When does it fail? What mechanism does this result reveal? Does it solve the real problem, or does it merely exploit a benchmark artifact?
+        </p>
+        <p>
+          This is especially important in CV, DL, and RL. Many things today can be made to work through scale, data, compute, and engineering. A method working does not automatically mean we understand it. A metric increasing does not automatically mean knowledge has been created.
+        </p>
+        <blockquote>
+          Experimental results are evidence. Mechanism is what may become knowledge.
+        </blockquote>
+        <p>
+          A researcher with taste is not satisfied with “it works.” They ask why it works, whether the phenomenon can be abstracted into a more general principle, and whether that principle can guide the design of the next system. Research is not a Kaggle leaderboard. <strong>The goal of research is not to make a number higher in isolation, but to deepen human understanding of a problem.</strong>
+        </p>
+
+        <h3>4. Good Taste Distinguishes Incremental Improvement From Conceptual Advance</h3>
+        <p>
+          Not every small improvement is meaningless. Many important systems require a great deal of incremental work before they become stable, usable, and reproducible. But a researcher with taste knows that different contributions carry different weight.
+        </p>
+        <p>
+          One work may improve COCO mAP by 0.4. Another may propose a framework that models instance segmentation in a more unified way. The first may be publishable. The second may change a paradigm.
+        </p>
+        <p>
+          Good taste leans toward problems that can produce conceptual advance. A contribution should not merely add one more result; it should add one more way of seeing. Strong research often makes later researchers say: so it can be thought of this way.
+        </p>
+        <p>
+          Not “so it can be tuned this way,” not “so modules can be stacked this way,” but “so it can be thought of this way.” This is one of the most precious things in research: <strong>providing a new mental model.</strong>
+        </p>
+
+        <h3>5. Good Taste Sees a Class of Problems Through One Task</h3>
+        <p>
+          An ordinary researcher sees a dataset, a task, and a metric. A researcher with taste sees deeper structures: optimization, representation, generalization, credit assignment, scaling, alignment, data distribution, and embodiment.
+        </p>
+        <p>
+          In RL, for example, the task is not merely “make the robot pick up the cup.” Behind it may be broader questions: how do we assign credit under sparse rewards? How do we handle sim-to-real distribution shift? How do we balance exploration and exploitation? How can policies obtain compositional generalization? How do we avoid extrapolation error in offline data?
+        </p>
+        <p>
+          This is the ability to see general problems inside concrete systems. Good taste does not float in the air and speak only in grand words. It is not enough to say, “I want to study intelligence.” Real taste sees transferable problem structures inside concrete tasks, models, and failures.
+        </p>
+        <p>
+          <strong>A researcher’s ability to abstract determines whether they can only solve one local task, or whether they can move a class of problems forward.</strong>
+        </p>
+
+        <h3>6. Good Taste Has a Sense of Time Scale</h3>
+        <p>
+          Many trends disappear. Many benchmarks become outdated. Many fancy architectures are replaced. Many things that look impressive today may become a single citation years later. But some questions persist.
+        </p>
+        <p>
+          How do we learn useful representations? How do models generalize out of distribution? How do agents learn from interaction? How do we align optimization objectives with real-world goals? How do systems scale with data, compute, and feedback? How do we make models interpretable, robust, efficient, and controllable?
+        </p>
+        <p>
+          Good taste has historical sense. It knows that technical details change, while underlying problems return again and again. A strong researcher does not only ask what is hot this year. They ask where this problem sits in the history of machine learning, how it continues earlier problems, whether it is an old problem under a new name, and what is genuinely new this time: scale, data, hardware, or interface.
+        </p>
+        <p>
+          Without historical sense, one is easily dragged around by trends. With historical sense, one is more likely to see real opportunities. This is also an implication of <em>The Bitter Lesson</em>: <strong>what is truly worth betting on is often not the cleverest short-term structure, but the mechanism that can best exploit long-term trends.</strong>
+        </p>
+
+        <h3>7. Good Taste Dislikes Dirty Things Aesthetically</h3>
+        <p>
+          “Dirty” here is not a moral accusation, but a research discomfort. People with taste tend to dislike things such as excessive tuning, results that work only on one benchmark, complex methods without explanation, many ablations without conclusions, claims much larger than evidence, unfair experimental settings, deliberately weak baselines, and papers that sound mysterious while being empty at the core.
+        </p>
+        <p>
+          Good taste contains intellectual cleanliness. This does not mean every piece of research must be perfect. Real research is often messy: experiments fail, systems have bugs, results have variance, and theories have holes. But a real researcher should at least know where the mess is. They should not deceive themselves.
+        </p>
+        <p>
+          They ask themselves harsh questions: is this improvement real? Is it seed variance? Is there data leakage? Was the baseline tuned properly? Does the conclusion hold only in this setting? Am I overclaiming?
+        </p>
+        <p>
+          This is part of academic character. <strong>Good taste is not only an aesthetic issue. It is also an issue of honesty.</strong>
+        </p>
+
+        <h3>8. Good Taste Is the Ability to Allocate Resources</h3>
+        <p>
+          Research is not an infinite-time game. Life, energy, compute, collaborators, and historical windows are all limited. Therefore good taste is, to a large extent, the ability to allocate resources.
+        </p>
+        <p>
+          A researcher with taste asks: is this problem important? Can I move it forward now? If it succeeds, how valuable will it be? If it fails, what can I learn? Is this direction already crowded into a compute competition? Is there a fundamental angle that others have ignored?
+        </p>
+        <p>
+          Many beginners think taste means choosing an impressive direction. In reality, taste is closer to <strong>choosing a problem that is meaningful and possible for you to advance, given your current ability, resources, and historical context.</strong>
+        </p>
+        <p>
+          This is hard. A problem that is too small has little value. A problem that is too large cannot be moved. A problem that is too hot may have become a compute race. A problem that is too cold may be cold because it is unimportant, or because the conditions are not mature. Good taste finds a position among these tensions.
+        </p>
+
+        <h3>9. Good Taste Can Explain Things Clearly</h3>
+        <p>
+          If a researcher truly understands something, they can usually explain it clearly. Not by deleting all details, but by layering them: intuition in one sentence, method in one paragraph, formulation on one page, evidence through experiments, and boundaries through limitations.
+        </p>
+        <p>
+          Good taste also appears in writing and presentation. A weak paper often makes the reader feel: you used many terms, but I still do not know what you solved. A strong paper makes the reader feel: I vaguely knew this problem before, but now I can suddenly see it more clearly.
+        </p>
+        <p>
+          This is why some excellent researchers and writers have so much influence. They do not merely understand; they organize complex things into structures that others can absorb. <strong>Clear explanation is not an extra skill outside research.</strong> It is part of research understanding itself.
+        </p>
+
+        <h3>10. Good Taste Feels Beauty, But Is Not Fooled by It</h3>
+        <p>
+          There is beauty in research. Good methods often have simple form, natural motivation, clear assumptions, strong results, broad applicability, and interpretable failure modes.
+        </p>
+        <p>
+          But taste is not the pursuit of elegance alone. Some elegant ideas are wrong. Some ugly engineering is temporarily useful. Some systems that look inelegant may be aligned with long-term trends. Some beautiful theories may fail to explain real phenomena.
+        </p>
+        <blockquote>
+          Appreciate elegance, but obey evidence. Like simplicity, but do not sacrifice truth. Seek generality, but do not speak empty generalities.
+        </blockquote>
+        <p>
+          A real scholar is not romantically obsessed with beautiful ideas. A real scholar has both aesthetics and discipline. This is bitter because the things you like are not always true; the things you find clever are not always useful; the things you find elegant do not always scale; and the structures you designed by hand may be surpassed by something more general, rougher, and more extensible.
+        </p>
+        <p>
+          <strong>Good taste is not only knowing what is beautiful. It is also being able to admit what is true.</strong>
+        </p>
+
+        <h3>What Is Bad Taste?</h3>
+        <p>
+          Bad taste is not merely “low ability.” More precisely, bad taste is judgment pulled by the wrong objectives: <strong>chasing trends rather than problems, complexity rather than essence, metrics rather than understanding, publication rather than contribution, packaging rather than honesty, and things that look advanced rather than things that are genuinely useful.</strong>
+        </p>
+        <p>
+          For example, seeing that LLMs are popular and forcing LLMs into every topic; seeing that diffusion is popular and using diffusion where it is not needed; seeing that transformers are popular and assuming all CNNs, control methods, and classical methods are inferior. This is not taste. This is trend chasing.
+        </p>
+        <p>
+          Good taste does not oppose trends. Many trends become trends precisely because real new conditions, capabilities, and problems have appeared. <strong>But good taste can still distinguish the essential problem from the noise inside a trend.</strong>
+        </p>
+
+        <h3>How Can a Beginner Train Taste?</h3>
+        <p>
+          For someone still accumulating experience, there is no need to possess master-level taste from the beginning. But one can train by asking questions whenever reading a paper: what problem does this paper really solve? Why is it important? Can its core idea be explained in one sentence? Why was this not done before, or why is it possible now? What exactly do the experiments prove, and what do they not prove? Where are the limitations? Will this paper still be remembered five years later, and if so, why? Can I transfer this idea to another setting?
+        </p>
+        <p>
+          Ask these questions often enough, and taste slowly grows. <strong>Taste is not a mysterious inborn aesthetic. It is judgment formed through reading, reproduction, failure, comparison, and reflection.</strong>
+        </p>
+        <p>
+          At first, you may only see that a method improves a number. Later, you start to see why it improves. Later still, you begin to judge whether the problem is worth solving. Only after more time might you form your own research intuition: <strong>what is real, what is empty, and what may remain.</strong>
+        </p>
+
+        <h3>Conclusion: The Bitter Taste</h3>
+        <p>
+          Good research taste may be summarized as follows: choose important and real problems, advance them in ways that are as simple, honest, testable, and reusable as possible, and know clearly the boundary of your contribution.
+        </p>
+        <p>
+          This sounds plain, but it is hard. It requires researchers to resist many temptations over the long term: the temptation of trends, complexity, metrics, publication, packaging, and self-deception.
+        </p>
+        <p>
+          Taste is bitter because it forces you to admit that not every idea you like is important, not every structure you design will remain, not every beautiful experiment explains a real problem, and not everything that gets published truly advances understanding.
+        </p>
+        <p>
+          But because it is bitter, it is precious. Good taste does not make a person look clever. It gradually moves a person closer to the real state of research: <strong>seeing real problems, respecting long-term trends, preferring clean solutions, obeying evidence, writing with restraint, and honestly facing one’s contributions and limitations.</strong>
+        </p>
+        <p>
+          Perhaps in the beginning a person has no papers, no results, no influence, and no right to speak of “master-level taste.” But they can still practice through every small project, every paper note, every reproduction, and every failed experiment: <strong>Is this problem real? Is my solution clean? Are my experiments honest? Are my conclusions restrained? Can others gain even a little new understanding from this?</strong>
+        </p>
+        <p>
+          Those who can train themselves this way for a long time will slowly approach the state of a real researcher. <strong>This is <em>The Bitter Taste</em>.</strong>
+        </p>
+      </article>
+
+      <footer class="essay-signature">
+        <p>June 8, 2026 21:08 / Yuzhuo YAO</p>
+      </footer>
+
+    </main>
+  </body>
+</html>

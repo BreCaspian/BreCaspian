@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Counter-UAV Laser Tracking, a project by Yuzhuo YAO."
+    />
+    <title>Counter-UAV Laser Tracking / Yuzhuo YAO</title>
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <main class="page project-page">
+      <nav class="article-nav" aria-label="Project navigation">
+        <a href="../index.html">Back to home</a>
+      </nav>
+
+      <header class="project-header">
+        <h1>Counter-UAV Laser Tracking</h1>
+        <p class="essay-subtitle">
+          A real-time vision-control pipeline for aerial target detection,
+          boresight alignment, and two-axis gimbal tracking.
+        </p>
+        <figure class="project-hero-image project-hero-wide">
+          <img
+            src="../assets/projects/counter-uav-laser-tracking/demo.gif"
+            alt="Counter-UAV laser tracking demo"
+          />
+        </figure>
+        <p class="project-actions">
+          <a
+            href="https://github.com/BreCaspian/LaserTracking-2026"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub repository
+          </a>
+        </p>
+      </header>
+
+      <section>
+        <h2>Overview</h2>
+        <p>
+          Counter-UAV Laser Tracking is a real-time vision-control system for
+          aerial target tracking and gimbal alignment. It connects industrial
+          camera acquisition, replaceable detection backends, image-space
+          control, serial gimbal communication, and calibration utilities into
+          one integrated experimental pipeline.
+        </p>
+        <p>
+          The project was built around the practical constraints of
+          competition-style robotics: limited frame budget, hardware feedback
+          latency, camera exposure tradeoffs, perception-control coupling, and
+          the need to replace detection backends without rewriting the rest of
+          the system.
+        </p>
+        <figure class="project-inline-figure project-inline-wide counter-uav-pipeline">
+          <img
+            src="../assets/projects/counter-uav-laser-tracking/pipeline.png"
+            alt="Counter-UAV Laser Tracking pipeline"
+            loading="lazy"
+          />
+          <figcaption>System pipeline from camera input to gimbal control.</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>Runtime Pipeline</h2>
+        <p>
+          The runtime starts from Hikvision industrial camera frames, runs
+          either classical color-based detection or TensorRT-based inference,
+          converts the selected target into an image-space measurement, and
+          feeds it into the controller together with the latest gimbal feedback
+          state.
+        </p>
+        <p>
+          The controller computes pitch and yaw corrections relative to the
+          calibrated laser boresight point, applies deadband, hysteresis,
+          smoothing, rate limiting, optional feedforward, damping, and
+          lost-target search logic, then sends fixed-size command frames to the
+          two-axis gimbal over serial.
+        </p>
+      </section>
+
+      <section>
+        <h2>System Components</h2>
+        <ul class="compact-list">
+          <li>
+            A shared common layer defines target measurements, gimbal state,
+            gimbal commands, camera intrinsics, boresight parameters, and YAML
+            configuration helpers.
+          </li>
+          <li>
+            The Hikvision MVS industrial camera module handles image acquisition
+            and provides frame buffers that can be consumed by CPU-based or
+            GPU-oriented downstream processing paths.
+          </li>
+          <li>
+            The detector module exposes a unified interface for classical HSV
+            detection or TensorRT inference through the TRTInferX backend.
+          </li>
+          <li>
+            The control module maps image-space target error into pitch and yaw
+            commands, with filtering, safety limits, feedforward, damping, and
+            lost-target behavior.
+          </li>
+          <li>
+            The serial module packs and parses fixed-size gimbal frames, handles
+            byte-stream alignment, and supports high-rate command transmission
+            with feedback statistics.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Hardware Setup</h2>
+        <p>
+          The prototype is built around a high-resolution Hikvision MVS
+          industrial camera, a long-focus lens, a visible laser reference
+          module, a two-axis gimbal, and a microcontroller-based low-level
+          control board. A Linux host runs image acquisition, detection, and
+          control logic, while USB 3.0 and serial communication connect the
+          camera and gimbal feedback loop.
+        </p>
+        <p>
+          The hardware choices were made for real-time tracking experiments:
+          camera resolution and exposure affect measurement stability, gimbal
+          feedback affects closed-loop behavior, and host-side GPU acceleration
+          can be used when the detector path needs higher throughput.
+        </p>
+        <div class="hardware-gallery">
+          <figure>
+            <img
+              src="../assets/projects/counter-uav-laser-tracking/hardware-overview.png"
+              alt="Counter-UAV Laser Tracking hardware overview"
+              loading="lazy"
+            />
+            <figcaption>Hardware overview.</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="../assets/projects/counter-uav-laser-tracking/laser-module.png"
+                alt="Visible laser reference module"
+                loading="lazy"
+              />
+              <figcaption>Visible laser reference module.</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="../assets/projects/counter-uav-laser-tracking/lens-mvl-kf3528m.png"
+              alt="MVL-KF3528M long-focus lens"
+              loading="lazy"
+            />
+            <figcaption>MVL-KF3528M long-focus lens.</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="../assets/projects/counter-uav-laser-tracking/camera-cs200.png"
+                alt="Hikvision MV-CS200 industrial camera"
+                loading="lazy"
+              />
+              <figcaption>Hikvision MV-CS200 industrial camera.</figcaption>
+            </figure>
+          <figure>
+            <img
+              src="../assets/projects/counter-uav-laser-tracking/gimbal-motor.png"
+              alt="GM6020 gimbal motor"
+              loading="lazy"
+            />
+            <figcaption>GM6020 gimbal motor.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="../assets/projects/counter-uav-laser-tracking/mcu-stm32.jpg"
+              alt="STM32F103C8T6 microcontroller board"
+              loading="lazy"
+            />
+            <figcaption>STM32F103C8T6 control board.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section>
+        <h2>Vision Pipeline</h2>
+        <p>
+          The vision side is organized around a replaceable detector interface.
+          A Hikvision MVS frame provides the timestamped BGR image, and the
+          detector backend converts that frame into a target center, bounding
+          box, confidence score, and timestamped measurement for the controller.
+        </p>
+        <p>
+          The classical backend uses HSV thresholding, optional blur,
+          morphological filtering, contour extraction, circularity and fill
+          ratio checks, then selects a single target candidate. It also includes
+          a lightweight tracking layer with center smoothing, velocity
+          prediction, ROI reuse, jump rejection, and short missed-frame
+          compensation.
+        </p>
+        <p>
+          The TensorRT backend follows the same detector contract. It wraps the
+          TRTInferX runtime, supports CPU input or GPU-buffer input when the
+          camera path provides it, and converts detections back into the same
+          image-space target measurement used by the control module.
+        </p>
+      </section>
+
+      <section>
+        <h2>Control Model</h2>
+        <p>
+          The controller does not aim at the image center directly. It tracks
+          the target center relative to the calibrated laser boresight point in
+          image coordinates.
+        </p>
+        <div class="formula" aria-label="Image-space boresight error formula">
+          e<sub>u</sub> = u<sub>t</sub> - u<sub>L</sub>
+          <br />
+          e<sub>v</sub> = v<sub>t</sub> - v<sub>L</sub>
+          <span class="note">
+            (u<sub>t</sub>, v<sub>t</sub>) is the detected target center, and
+            (u<sub>L</sub>, v<sub>L</sub>) is the calibrated laser boresight
+            point in the image.
+          </span>
+        </div>
+        <p>
+          Camera intrinsics convert pixel error into small angular corrections,
+          with sign terms used to match the gimbal coordinate convention.
+        </p>
+        <div class="formula" aria-label="Pixel error to angle correction formula">
+          &Delta;yaw = s<sub>yaw</sub> atan(e<sub>u</sub> / f<sub>x</sub>)
+          <br />
+          &Delta;pitch = s<sub>pitch</sub> atan(e<sub>v</sub> / f<sub>y</sub>)
+          <span class="note">
+            The implementation converts these angular corrections to degrees for
+            the gimbal command interface.
+          </span>
+        </div>
+        <p>
+          The output command is then smoothed and rate-limited, so the control
+          signal remains compatible with real gimbal dynamics.
+        </p>
+        <div class="formula" aria-label="Gimbal command smoothing and rate limit formula">
+          q<sub>cmd</sub> = q<sub>state</sub> + k<sub>p</sub>&Delta;q
+          <br />
+          q<sub>smooth</sub> =
+          &alpha;q<sub>cmd</sub> + (1 - &alpha;)q<sub>prev</sub>
+          <br />
+          |q<sub>smooth</sub> - q<sub>prev</sub>| / &Delta;t &le;
+          &omega;<sub>max</sub>
+          <span class="note">
+            q represents either yaw or pitch. Deadband and hysteresis are applied
+            before command smoothing to avoid small noisy corrections.
+          </span>
+        </div>
+        <p>
+          A more detailed explanation of the control principle is available in
+          this
+          <a
+            href="https://bbs.robomaster.com/article/1883301?source=1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            technical blog post
+          </a>.
+        </p>
+      </section>
+
+      <section>
+        <h2>Boresight and Parallax Calibration</h2>
+        <p>
+          The system tracks targets relative to a calibrated laser boresight
+          point in the camera image, rather than simply aiming at the image
+          center. The boresight calibrator helps estimate that image-space
+          reference point, while the parallax estimator analyzes how a
+          camera-laser baseline produces distance-dependent pixel offsets.
+        </p>
+        <p>
+          These tools are important because a fixed pixel offset is only a local
+          approximation. With a long focal length and a nonzero baseline, even a
+          small mechanical offset can become a visible image displacement at
+          different working distances.
+        </p>
+      </section>
+
+      <section>
+        <h2>Engineering Notes</h2>
+        <p>
+          From the beginning, the system was designed as a loosely coupled
+          modular pipeline rather than a monolithic demo. Camera acquisition,
+          detector backends, controller logic, serial communication,
+          calibration tools, and visualization are connected through shared data
+          interfaces, which makes the system easier to debug, extend, and adapt
+          to different hardware setups.
+        </p>
+        <p>
+          This separation matters for real-time robotics. It makes frame-rate
+          limits, transfer overhead, serial scheduling, and control stability
+          easier to inspect independently, while still allowing the whole
+          pipeline to run as a connected system.
+        </p>
+        <p>
+          The TensorRT path reuses my TRTInferX inference runtime, connecting
+          the standalone YOLO deployment engine to a full perception-control
+          application.
+        </p>
+        <figure class="project-inline-figure project-inline-wide">
+          <img
+            src="../assets/projects/counter-uav-laser-tracking/thread-model.png"
+            alt="Thread model for Counter-UAV Laser Tracking"
+            loading="lazy"
+          />
+          <figcaption>Thread model used for system-level timing analysis.</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>Why It Matters</h2>
+        <p>
+          Real-time robotic tracking is not only a detection problem. The final
+          behavior depends on camera latency, detector runtime, target
+          measurement stability, gimbal feedback quality, serial scheduling,
+          calibration accuracy, and controller dynamics.
+        </p>
+        <p>
+          This project was built to expose and connect those pieces in one
+          inspectable system, making it possible to test how perception,
+          calibration, and control interact under practical timing constraints.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

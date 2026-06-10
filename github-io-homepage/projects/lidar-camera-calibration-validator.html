@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="LiDAR-Camera Calibration Validator, a project by Yuzhuo YAO."
+    />
+    <title>LiDAR-Camera Calibration Validator / Yuzhuo YAO</title>
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <main class="page project-page">
+      <nav class="article-nav" aria-label="Project navigation">
+        <a href="../index.html">Back to home</a>
+      </nav>
+
+      <header class="project-header">
+        <h1>LiDAR-Camera Calibration Validator</h1>
+        <p class="essay-subtitle">
+          A ROS1 / ROS2 toolkit for validating LiDAR-camera calibration through
+          real-time projection, visual overlay, and field-oriented sensor
+          synchronization.
+        </p>
+        <figure class="project-hero-image">
+          <img
+            src="../assets/projects/lidar-camera-calibration-validator/LCCV.png"
+            alt="LiDAR-Camera Calibration Validator overview"
+          />
+        </figure>
+        <p class="project-actions">
+          <a href="https://github.com/BreCaspian/LiDAR-Camera_Calibration_Validator">
+            ROS1 repository
+          </a>
+          <span>/</span>
+          <a href="https://github.com/BreCaspian/LiDAR-Camera_Calibration_Validator-ROS2">
+            ROS2 repository
+          </a>
+        </p>
+      </header>
+
+      <section>
+        <h2>Overview</h2>
+        <p>
+          LiDAR-camera calibration is a small but important part of robotic
+          perception. A calibration result may look numerically valid, yet still
+          fail visually when projected into real scenes. This project focuses on
+          fast visual validation: projecting LiDAR point clouds onto camera
+          images and helping users judge whether the extrinsic parameters are
+          actually usable.
+        </p>
+        <p>
+          The validator is designed as a practical tool rather than a full
+          calibration algorithm. It helps inspect, compare, and refine existing
+          calibration parameters through visualization, online parameter tuning,
+          and lightweight quantitative cues. Later versions also target
+          practical deployment issues: non-repetitive LiDAR scans, missing
+          hardware time synchronization, ROS2 parameter workflows, and QoS
+          compatibility.
+        </p>
+        <figure class="project-inline-figure project-inline-wide lccv-inline-figure">
+          <img
+            src="../assets/projects/lidar-camera-calibration-validator/system-pipeline.png"
+            alt="System pipeline for LiDAR-Camera Calibration Validator"
+          />
+          <figcaption>Projection and validation pipeline.</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>Features</h2>
+        <ul class="compact-list">
+          <li>Distortion-aware point cloud projection onto camera images.</li>
+          <li>
+            Visual checking of LiDAR-camera alignment through projected points.
+          </li>
+          <li>
+            Edge-overlap and lightweight image-depth consistency metrics for
+            calibration quality estimation.
+          </li>
+          <li>
+            ApproximateTime and latest-style synchronization modes for both
+            time-aligned sensors and loosely synchronized field setups.
+          </li>
+          <li>
+            Multi-frame point cloud accumulation for sparse or non-repetitive
+            LiDARs such as Livox-style sensors.
+          </li>
+          <li>
+            Online parameter adjustment through ROS1 dynamic_reconfigure or
+            ROS2 native parameters.
+          </li>
+          <li>
+            ROS2 support with configurable fused-image QoS, render timer,
+            projection cache, metrics interval, and TBB-based projection for
+            larger point clouds.
+          </li>
+        </ul>
+        <figure class="project-inline-figure lccv-inline-figure">
+          <img
+            src="../assets/projects/lidar-camera-calibration-validator/VisualizationGUI.png"
+            alt="Visualization GUI for calibration validation"
+          />
+          <figcaption>Visualization and online parameter adjustment.</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>Evolution</h2>
+        <p>
+          The project gradually moved from a basic ROS1 visual overlay into a
+          field-oriented validation tool. The first ROS1 version started with
+          projected point-cloud visualization and later added
+          distortion-corrected projection, edge-based metrics, dynamic parameter
+          tuning, FPS and processing-time monitoring, and parallel projection
+          for large point clouds.
+        </p>
+        <p>
+          The next stage focused on real LiDAR deployment. It added support for
+          non-repetitive LiDAR scans, especially Livox-style sensors, and
+          introduced latest/latest_pair synchronization so visual validation can
+          still work when strict hardware time synchronization is unavailable.
+        </p>
+        <p>
+          The ROS2 Humble implementation then moved the build and launch path
+          to <code>ament_cmake</code>, <code>rclcpp</code>, and
+          <code>ros2 launch</code>; runtime tuning moved from
+          <code>dynamic_reconfigure</code> to ROS2 parameters; the fused image
+          publisher gained configurable <code>QoS</code> reliability; and
+          parameter updates are checked after application so tuning failures are
+          easier to notice.
+        </p>
+        <figure class="project-inline-figure lccv-inline-figure">
+          <img
+            src="../assets/projects/lidar-camera-calibration-validator/LIVOX-LiDAR-Vali.png"
+            alt="Livox LiDAR validation example"
+          />
+          <figcaption>Validation example with Livox LiDAR-camera projection.</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>Why It Matters</h2>
+        <p>
+          Multi-sensor perception pipelines depend heavily on reliable
+          extrinsic calibration. When the alignment between LiDAR and camera is
+          off, downstream perception modules may silently inherit geometric
+          errors. A lightweight validation tool makes this failure mode easier
+          to notice before it affects mapping, detection, tracking, or planning.
+        </p>
+        <p>
+          The project is also shaped by field constraints. Spinning LiDAR,
+          non-repetitive LiDAR scans, and Livox-style sensors do not always
+          produce equally dense or equally regular point clouds, and not every
+          setup has precise hardware time synchronization. Supporting
+          accumulation, latest-style matching, online tuning, and configurable
+          ROS2 <code>QoS</code> makes the validator useful outside carefully
+          prepared lab recordings.
+        </p>
+      </section>
+
+      <section>
+        <h2>Principle</h2>
+        <p>
+          The validator treats calibration quality as a LiDAR-to-image
+          projection problem. It loads three fields from an OpenCV YAML
+          calibration file: the camera intrinsic matrix
+          <code>K_0</code>, the distortion coefficients <code>C_0</code>, and
+          the LiDAR-to-camera extrinsic transform <code>E_0</code>.
+        </p>
+        <div class="formula" aria-label="LiDAR to camera transform formula">
+          E<sub>0</sub> =
+          <span class="matrix" aria-hidden="true">
+            <span class="matrix-row">
+              <span>R</span>
+              <span>t</span>
+            </span>
+            <span class="matrix-row">
+              <span>0<sup>T</sup></span>
+              <span>1</span>
+            </span>
+          </span>
+          &isin; SE(3), &nbsp;
+          R &isin; SO(3), &nbsp; t &isin; R<sup>3</sup>
+          <br />
+          p<sub>c</sub> = E<sub>0</sub>p<sub>l</sub>, &nbsp;
+          p<sub>l</sub> = [x<sub>l</sub>, y<sub>l</sub>, z<sub>l</sub>, 1]<sup>T</sup>, &nbsp;
+          p<sub>c</sub> = [X<sub>c</sub>, Y<sub>c</sub>, Z<sub>c</sub>, 1]<sup>T</sup>
+          <span class="note">
+            E<sub>0</sub> is expected to map LiDAR to camera. If a calibration
+            tool exports camera-to-LiDAR, the inverse transform should be used.
+            Only points with positive camera-frame depth above a small near-plane
+            threshold are valid for projection.
+          </span>
+        </div>
+        <p>
+          Each incoming <code>PointCloud2</code> frame is converted to a
+          <code>PCL</code> cloud, optionally accumulated, downsampled, and
+          distance-filtered. Valid points are normalized by depth, corrected
+          with the Brown-Conrady radial-tangential distortion model when
+          distortion parameters are available, and mapped to image pixels
+          through the camera intrinsics.
+        </p>
+        <div class="formula" aria-label="Camera projection and distortion formula">
+          <span class="formula-block">
+            x<sub>n</sub> = X<sub>c</sub> / Z<sub>c</sub>, &nbsp;
+            y<sub>n</sub> = Y<sub>c</sub> / Z<sub>c</sub>, &nbsp;
+            r<sup>2</sup> =
+            x<sub>n</sub><sup>2</sup> + y<sub>n</sub><sup>2</sup>
+          </span>
+          <span class="formula-block formula-align">
+            <span>
+              x<sub>d</sub> =
+              x<sub>n</sub>(1 + k<sub>1</sub>r<sup>2</sup> +
+              k<sub>2</sub>r<sup>4</sup> + k<sub>3</sub>r<sup>6</sup>)
+              + 2p<sub>1</sub>x<sub>n</sub>y<sub>n</sub>
+              + p<sub>2</sub>(r<sup>2</sup> + 2x<sub>n</sub><sup>2</sup>)
+            </span>
+            <span>
+              y<sub>d</sub> =
+              y<sub>n</sub>(1 + k<sub>1</sub>r<sup>2</sup> +
+              k<sub>2</sub>r<sup>4</sup> + k<sub>3</sub>r<sup>6</sup>)
+              + p<sub>1</sub>(r<sup>2</sup> + 2y<sub>n</sub><sup>2</sup>)
+              + 2p<sub>2</sub>x<sub>n</sub>y<sub>n</sub>
+            </span>
+          </span>
+          <span class="formula-block">
+            K<sub>0</sub> =
+            <span class="matrix" aria-hidden="true">
+              <span class="matrix-row">
+                <span>f<sub>x</sub></span>
+                <span>0</span>
+                <span>c<sub>x</sub></span>
+              </span>
+              <span class="matrix-row">
+                <span>0</span>
+                <span>f<sub>y</sub></span>
+                <span>c<sub>y</sub></span>
+              </span>
+              <span class="matrix-row">
+                <span>0</span>
+                <span>0</span>
+                <span>1</span>
+              </span>
+            </span>
+          </span>
+          <span class="formula-block">
+            u = f<sub>x</sub>x<sub>d</sub> + c<sub>x</sub>, &nbsp;
+            v = f<sub>y</sub>y<sub>d</sub> + c<sub>y</sub>
+          </span>
+          <span class="note">
+            C<sub>0</sub> provides k<sub>1</sub>, k<sub>2</sub>, p<sub>1</sub>,
+            p<sub>2</sub>, and optionally k<sub>3</sub>. The projected pixel is
+            drawn only if it falls inside the image.
+          </span>
+        </div>
+        <p>
+          The overlay is paired with lightweight quality cues. Projection ratio
+          measures how many LiDAR points land inside the image. Edge overlap
+          runs Canny edge detection and a distance transform, then checks how
+          many projected points fall near visual edges. The image-depth
+          consistency score in this implementation samples image intensity at
+          projected pixels and compares it with point depth as a
+          correlation-style signal.
+        </p>
+        <div class="formula" aria-label="Validation metrics formula">
+          R<sub>proj</sub> = N<sub>valid</sub> / N<sub>total</sub>, &nbsp;
+          S<sub>edge</sub> = (1 / N) &Sigma;<sub>i=1</sub><sup>N</sup>
+          1[D(u<sub>i</sub>, v<sub>i</sub>) &lt; &tau;]
+          <br />
+          S<sub>corr</sub> =
+          | cov(I(u<sub>i</sub>, v<sub>i</sub>), Z<sub>i</sub>) | /
+          (&sigma;<sub>I</sub>&sigma;<sub>Z</sub>)
+          <span class="note">
+            These scores give quick cues, while the visual overlay remains the
+            main validation signal.
+          </span>
+        </div>
+        <p>
+          The two versions show the same validation idea across two ROS
+          generations: a ROS1 implementation focused on
+          <code>dynamic_reconfigure</code> and synchronized visual inspection,
+          and a ROS2 implementation redesigned around parameters,
+          <code>QoS</code>, projection caching, render scheduling, and
+          <code>TBB</code>-based parallel processing for larger point clouds.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

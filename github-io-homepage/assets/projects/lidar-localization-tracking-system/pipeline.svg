@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 1180" role="img" aria-labelledby="title desc">
+  <title id="title">LiDAR Localization and Tracking System pipeline</title>
+  <desc id="desc">Core radar-station pipeline from LiDAR and camera inputs to detection, fusion, tracking, UART, ROS, and GUI outputs.</desc>
+  <defs>
+    <style>
+      .bg { fill: #fffffb; }
+      .group { fill: #f5f3ec; stroke: #d9d6cc; stroke-width: 1.2; }
+      .box { rx: 8; stroke-width: 1.4; }
+      .input { fill: #d7eee8; stroke: #75aaa0; }
+      .prep { fill: #dbeafd; stroke: #6ea5d9; }
+      .detect { fill: #ead7f5; stroke: #aa6ac2; }
+      .fusion { fill: #fff0c2; stroke: #d8a83b; }
+      .track { fill: #ffe0d2; stroke: #d47a5a; }
+      .out { fill: #dbe8ee; stroke: #7f9aa5; }
+      .label { fill: #3c4144; font-family: Georgia, 'Times New Roman', serif; font-size: 18px; }
+      .small { fill: #687073; font-family: Georgia, 'Times New Roman', serif; font-size: 14px; }
+      .layer { fill: #6b7376; font-family: Georgia, 'Times New Roman', serif; font-size: 15px; font-style: italic; }
+      .arrow { fill: none; stroke: #899195; stroke-width: 1.4; marker-end: url(#arrow); }
+      .thin { fill: none; stroke: #a5abad; stroke-width: 1.1; marker-end: url(#arrow); }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#899195" />
+    </marker>
+  </defs>
+  <rect class="bg" width="980" height="1180" />
+  <text x="490" y="54" text-anchor="middle" class="label" style="font-size:28px">Core Processing Pipeline</text>
+
+  <rect x="150" y="86" width="680" height="132" class="group" />
+  <text x="490" y="112" text-anchor="middle" class="layer">Input Layer</text>
+  <rect x="210" y="134" width="220" height="58" class="box input" />
+  <text x="320" y="158" text-anchor="middle" class="label">LiDAR Point Cloud</text>
+  <text x="320" y="179" text-anchor="middle" class="small">CH128X / ROS PointCloud2</text>
+  <rect x="550" y="134" width="220" height="58" class="box input" />
+  <text x="660" y="158" text-anchor="middle" class="label">Industrial Camera</text>
+  <text x="660" y="179" text-anchor="middle" class="small">Hikvision / MindVision</text>
+
+  <rect x="150" y="260" width="680" height="132" class="group" />
+  <text x="490" y="286" text-anchor="middle" class="layer">Preprocessing Layer</text>
+  <rect x="210" y="308" width="220" height="58" class="box prep" />
+  <text x="320" y="332" text-anchor="middle" class="label">Point-Cloud Processing</text>
+  <text x="320" y="353" text-anchor="middle" class="small">downsample / chunk projection</text>
+  <rect x="550" y="308" width="220" height="58" class="box prep" />
+  <text x="660" y="332" text-anchor="middle" class="label">Image Processing</text>
+  <text x="660" y="353" text-anchor="middle" class="small">undistort / exposure / frame sync</text>
+
+  <rect x="430" y="436" width="300" height="190" class="group" />
+  <text x="580" y="462" text-anchor="middle" class="layer">Detection Layer</text>
+  <rect x="480" y="486" width="200" height="58" class="box detect" />
+  <text x="580" y="510" text-anchor="middle" class="label">Vehicle Detector</text>
+  <text x="580" y="531" text-anchor="middle" class="small">TensorRT YOLOv5</text>
+  <rect x="480" y="556" width="200" height="58" class="box detect" />
+  <text x="580" y="580" text-anchor="middle" class="label">ROI Armor Detector</text>
+  <text x="580" y="601" text-anchor="middle" class="small">armor boxes in vehicle ROIs</text>
+
+  <rect x="285" y="680" width="410" height="188" class="group" />
+  <text x="490" y="706" text-anchor="middle" class="layer">Fusion and Localization Layer</text>
+  <rect x="390" y="730" width="200" height="58" class="box fusion" />
+  <text x="490" y="754" text-anchor="middle" class="label">Depth Assignment</text>
+  <text x="490" y="775" text-anchor="middle" class="small">armor center + LiDAR depth</text>
+  <rect x="390" y="800" width="200" height="58" class="box fusion" />
+  <text x="490" y="824" text-anchor="middle" class="label">3D Field Localization</text>
+  <text x="490" y="845" text-anchor="middle" class="small">camera point -> world coordinate</text>
+
+  <rect x="245" y="922" width="490" height="160" class="group" />
+  <text x="490" y="948" text-anchor="middle" class="layer">Tracking and Recovery Layer</text>
+  <rect x="390" y="972" width="200" height="58" class="box track" />
+  <text x="490" y="996" text-anchor="middle" class="label">Multi-Target Tracking</text>
+  <text x="490" y="1017" text-anchor="middle" class="small">ByteTrack / DeepSORT</text>
+  <rect x="390" y="1042" width="200" height="58" class="box track" />
+  <text x="490" y="1066" text-anchor="middle" class="label">State Recovery</text>
+  <text x="490" y="1087" text-anchor="middle" class="small">IoU / tracker-ID / prediction</text>
+
+  <rect x="150" y="1124" width="680" height="44" class="group" />
+  <rect x="200" y="1138" width="150" height="42" class="box out" transform="translate(0 -22)" />
+  <text x="275" y="1142" text-anchor="middle" class="label">UART</text>
+  <text x="275" y="1162" text-anchor="middle" class="small">referee system</text>
+  <rect x="415" y="1138" width="150" height="42" class="box out" transform="translate(0 -22)" />
+  <text x="490" y="1142" text-anchor="middle" class="label">ROS</text>
+  <text x="490" y="1162" text-anchor="middle" class="small">locations topic</text>
+  <rect x="630" y="1138" width="150" height="42" class="box out" transform="translate(0 -22)" />
+  <text x="705" y="1142" text-anchor="middle" class="label">GUI</text>
+  <text x="705" y="1162" text-anchor="middle" class="small">visual debug</text>
+
+  <path d="M320 192 V308" class="arrow" />
+  <path d="M660 192 V308" class="arrow" />
+  <path d="M660 366 V486" class="arrow" />
+  <path d="M580 544 V556" class="arrow" />
+  <path d="M320 366 C320 600 420 620 490 730" class="thin" />
+  <path d="M580 614 C580 660 530 688 490 730" class="thin" />
+  <path d="M490 788 V800" class="arrow" />
+  <path d="M490 858 V972" class="arrow" />
+  <path d="M490 1030 V1042" class="arrow" />
+  <path d="M490 1100 C490 1130 335 1114 275 1116" class="thin" />
+  <path d="M490 1100 V1116" class="thin" />
+  <path d="M490 1100 C490 1130 645 1114 705 1116" class="thin" />
+</svg>

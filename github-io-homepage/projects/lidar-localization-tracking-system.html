@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="LiDAR Localization & Tracking System, a RoboMaster radar-station project by Yuzhuo YAO."
+    />
+    <title>LiDAR Localization &amp; Tracking System / Yuzhuo YAO</title>
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <main class="page project-page">
+      <nav class="article-nav" aria-label="Project navigation">
+        <a href="../index.html">Back to home</a>
+      </nav>
+
+      <header class="project-header">
+        <h1>LiDAR Localization &amp; Tracking System</h1>
+        <p class="essay-subtitle">
+          A LiDAR-camera fusion system for robot detection, depth-aware
+          localization, multi-target recovery, and referee-system communication
+          in RoboMaster radar-station scenarios.
+        </p>
+        <figure class="project-inline-figure project-inline-wide">
+          <img
+            src="../assets/projects/lidar-localization-tracking-system/lidar-demo.gif"
+            alt="GUI demo with camera view, LiDAR depth overlay, and map visualization"
+          />
+          <figcaption>
+            GUI demo combining camera overlay, LiDAR projection, map
+            visualization, and runtime controls.
+          </figcaption>
+        </figure>
+        <p class="project-actions">
+          <a
+            href="https://github.com/BreCaspian/ROBOMASTER-HORIZON-LiDAR-2025"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub repository
+          </a>
+        </p>
+      </header>
+
+      <section>
+        <h2>Overview</h2>
+        <p>
+          LiDAR Localization &amp; Tracking System is a ROS / C++ RoboMaster
+          radar-station project that fuses industrial-camera vision with LiDAR
+          depth. It detects robot vehicles and armor plates, assigns LiDAR
+          depth to image-space armor centers, reconstructs field coordinates,
+          maintains target identity over time, and sends localization results
+          into the RoboMaster referee-system communication loop.
+        </p>
+        <p>
+          The project is best understood as a complete radar-station pipeline
+          rather than a single detection demo. Its core problem is keeping
+          camera frames, LiDAR point clouds, calibration, target IDs, world
+          coordinates, ROS outputs, GUI feedback, and UART messages consistent
+          under real-time competition constraints.
+        </p>
+        <p>
+          I developed this implementation for the HORIZON RoboMaster 2025 radar
+          group, and tested it around CH128X LiDAR input, Hikvision / MindVision
+          industrial cameras, CUDA / TensorRT inference, and ROS Noetic
+          deployment. MindVision camera demos reached roughly 60 FPS in the
+          documented setup, while high-resolution Hikvision operation was closer
+          to 10 FPS because of the much heavier image stream.
+        </p>
+        <div class="project-pair-figure">
+          <figure>
+            <img
+              src="../assets/projects/lidar-localization-tracking-system/radar-station-front.jpg"
+              alt="Front view of the LiDAR radar station hardware"
+              loading="lazy"
+            />
+            <figcaption>Front view of the radar-station prototype.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="../assets/projects/lidar-localization-tracking-system/radar-station-rear.jpg"
+              alt="Rear view of the LiDAR radar station hardware"
+              loading="lazy"
+            />
+            <figcaption>Rear view of the radar-station prototype.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section>
+        <h2>Core Technical Pipeline</h2>
+        <p>
+          The default perception path is a two-stage detector:
+          <em>vehicle detector -> ROI armor detector</em>. The vehicle detector
+          first finds candidate robot regions, then the armor detector runs
+          inside each vehicle ROI and maps armor boxes back to the original
+          image. This makes the armor search more focused and gives the
+          localization module a semantically meaningful image point.
+        </p>
+        <p>
+          In parallel, incoming LiDAR frames are projected into the camera
+          image to build an image-aligned depth map. A detected armor center is
+          therefore not treated as a pure 2D detection: it becomes a 2D image
+          measurement with LiDAR-provided depth, which can be lifted into 3D
+          camera coordinates and transformed into the field frame.
+        </p>
+        <figure class="project-inline-figure project-inline-wide">
+          <img
+            src="../assets/projects/lidar-localization-tracking-system/pipeline.svg"
+            alt="Core processing pipeline for LiDAR Localization and Tracking System"
+            loading="lazy"
+          />
+          <figcaption>
+            Core processing pipeline from LiDAR and camera input to localization,
+            tracking, UART, ROS, and GUI output.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>LiDAR-to-Camera Depth Projection</h2>
+        <p>
+          The LiDAR callback converts each incoming <code>PointCloud2</code>
+          message into a <code>PCL</code> cloud and applies the configured
+          LiDAR-to-camera extrinsic matrix. Points behind the camera or outside
+          the image bounds are discarded. Valid points are projected through the
+          camera intrinsic matrix and written into an image-sized depth map.
+        </p>
+        <p>
+          When multiple LiDAR points fall onto the same pixel, the depth map
+          keeps the nearest valid depth. This creates a practical bridge between
+          sparse 3D LiDAR geometry and 2D armor detections: the detector only
+          needs to provide an armor center, while the LiDAR projection supplies
+          the corresponding metric depth.
+        </p>
+        <p>
+          The downstream localization step undistorts the detected armor center
+          before combining it with the sampled LiDAR depth.
+        </p>
+        <div class="formula" aria-label="LiDAR point projection to image depth map">
+          p<sub>c</sub> = E<sub>CL</sub> p<sub>L</sub>,
+          &nbsp; p<sub>c</sub> = [X, Y, Z, 1]<sup>T</sup>
+          <br />
+          u = f<sub>x</sub>X / Z + c<sub>x</sub>,
+          &nbsp; v = f<sub>y</sub>Y / Z + c<sub>y</sub>
+          <br />
+          D(u, v) = min(D(u, v), Z)
+          <span class="note">
+            E<sub>CL</sub> maps LiDAR coordinates into the camera frame. The
+            depth map stores camera-frame Z depth at projected image pixels.
+          </span>
+        </div>
+        <figure class="project-inline-figure">
+          <img
+            src="../assets/projects/lidar-localization-tracking-system/point-cloud.jpg"
+            alt="LiDAR point cloud projection and visualization"
+            loading="lazy"
+          />
+          <figcaption>LiDAR depth projection and point-cloud visualization.</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>Field Localization</h2>
+        <p>
+          Map calibration starts from an interactive four-point picking tool.
+          The system loads known field landmarks from a JSON map file, lets the
+          operator click their image positions, refines the selected corners,
+          and tries multiple PnP solvers including P3P, AP3P, and EPNP. The
+          solution with the lowest reprojection error is used as the camera to
+          world transform.
+        </p>
+        <p>
+          For each detected armor plate, the image center is undistorted,
+          combined with LiDAR depth, lifted into camera coordinates, and
+          transformed into the world frame. The depth is not estimated from
+          monocular vision; it is sampled from the LiDAR-projected depth map at
+          the detected armor center.
+        </p>
+        <div class="formula" aria-label="Image and depth to world coordinate">
+          x<sub>n</sub>, y<sub>n</sub> = undistort(u, v; K, C)
+          <br />
+          p<sub>c</sub> = d [x<sub>n</sub>, y<sub>n</sub>, 1]<sup>T</sup>
+          <br />
+          p<sub>w</sub> = T<sub>wc</sub> p<sub>c</sub>
+          <span class="note">
+            T<sub>wc</sub> is obtained from the PnP-based field calibration and
+            maps camera-frame coordinates into the field/world frame.
+          </span>
+        </div>
+      </section>
+
+      <section>
+        <h2>Dense Point-Cloud Handling</h2>
+        <p>
+          A major engineering focus was keeping dense LiDAR input usable inside
+          the real-time radar-station loop. The project supports voxel-grid,
+          random, and uniform downsampling, adaptive voxel adjustment, LiDAR
+          health logging, and chunked projection for large point clouds.
+        </p>
+        <p>
+          The large-cloud path splits point clouds into chunks, computes local
+          depth maps in parallel, and merges them by nearest valid depth. This
+          is especially important for high-density sensors such as CH128X, where
+          naive single-threaded projection can dominate the frame budget.
+          The goal is to preserve enough near-object depth detail while
+          preventing dense LiDAR frames from dominating the perception loop.
+        </p>
+        <p>
+          The processing path is density-aware: smaller clouds avoid unnecessary
+          threading overhead, while large clouds are split across worker threads
+          and merged from local depth maps. In practice, downsampling is useful
+          for controlling runtime cost, but it must be used carefully because
+          overly sparse clouds can make localized depth values jitter,
+          especially along the Z axis.
+        </p>
+        <figure class="project-inline-figure">
+          <img
+            src="../assets/projects/lidar-localization-tracking-system/ch128x.png"
+            alt="CH128X LiDAR hardware used by the radar-station project"
+            loading="lazy"
+          />
+          <figcaption>CH128X LiDAR support and dense point-cloud processing.</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>Multi-Target Tracking and Recovery</h2>
+        <p>
+          Tracking is used as a localization-stability layer rather than only a
+          visual overlay. ByteTrack maintains persistent target IDs across
+          frames, while the mapping module can use tracker IDs and IoU-based
+          association to recover robot targets when armor detections are briefly
+          missing but the vehicle region is still visible.
+        </p>
+        <p>
+          ByteTrack is a good fit here because it uses geometric association and
+          Kalman-style motion prediction without requiring an additional
+          appearance feature network. Compared with a heavier DeepSORT-style
+          path, this keeps the tracking layer lightweight while still reducing
+          ID switches and preserving targets through short occlusions or weak
+          detections.
+        </p>
+        <p>
+          The localization module also contains history-based position
+          prediction and Z-axis jump correction. These recovery mechanisms are
+          important because a radar-station output should remain stable even
+          when one frame has weak armor confidence, imperfect depth assignment,
+          or temporary target occlusion.
+        </p>
+      </section>
+
+      <section>
+        <h2>Referee-System Communication</h2>
+        <p>
+          The UART module connects the perception pipeline to the RoboMaster
+          referee system. It parses match state, robot HP, and related protocol
+          frames, and sends radar map position data through the
+          <code>0x0305</code> command with CRC8 / CRC16 validation. The protocol
+          path was updated for the 2025 RoboMaster referee-system format.
+        </p>
+        <p>
+          The system also publishes localization results through ROS messages,
+          allowing the same position estimates to be consumed by visualization,
+          debugging tools, or other robot-side modules.
+        </p>
+        <figure class="project-inline-figure project-inline-small">
+          <img
+            src="../assets/projects/lidar-localization-tracking-system/uart-test.png"
+            alt="UART testing interface"
+            loading="lazy"
+          />
+          <figcaption>UART testing and referee-system communication support.</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>Visualization and Debugging</h2>
+        <p>
+          The GUI node subscribes to the fused camera view and localization
+          messages, then displays the map, target trajectories, FPS, camera
+          parameters, team state, and system switches. It can toggle recording,
+          depth overlay, point-cloud visualization, UART testing, and ByteTrack
+          through ROS parameters.
+        </p>
+        <p>
+          This tooling matters because radar-station failures are often
+          cross-module failures: a wrong extrinsic matrix, a stale LiDAR frame,
+          a missing depth value, a lost target ID, or a UART protocol issue can
+          all look like a bad final localization result unless the intermediate
+          state is visible.
+        </p>
+        <figure class="project-inline-figure project-inline-wide">
+          <img
+            src="../assets/projects/lidar-localization-tracking-system/lidar-cover.jpg"
+            alt="GUI with camera view, LiDAR depth overlay, and map visualization"
+            loading="lazy"
+          />
+          <figcaption>
+            GUI view combining camera overlay, LiDAR projection, map
+            visualization, and runtime controls.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>Engineering Challenges</h2>
+        <p>
+          Several constraints shaped the design. High-density LiDAR input makes
+          projection throughput a first-class problem; high-resolution
+          industrial cameras trade image detail for lower frame rate; and the
+          final localization quality depends strongly on camera calibration,
+          LiDAR-camera extrinsics, model quality, and depth availability at the
+          detected armor center.
+        </p>
+        <p>
+          The project therefore favors inspectable engineering over a black-box
+          perception stack: configurable camera drivers, TensorRT engine
+          generation, optional tracking backends, switchable point-cloud
+          handling strategies, runtime GUI controls, logs, offline point-cloud
+          testing, and UART test tools.
+        </p>
+      </section>
+
+      <section>
+        <h2>Why It Matters</h2>
+        <p>
+          This project is valuable because it exposes the full engineering
+          burden behind a radar-station system. The difficult part is not only
+          detecting robots, but keeping camera frames, LiDAR depth, map
+          calibration, tracking IDs, world coordinates, GUI feedback, and match
+          communication consistent under real-time constraints.
+        </p>
+        <p>
+          It also records a useful design lesson: perception systems for
+          robotics are often limited by synchronization, calibration quality,
+          dense sensor throughput, and operational tooling. A reliable system
+          needs model inference, geometric projection, state recovery, logging,
+          and human-facing debugging tools to work together.
+        </p>
+        <p>
+          A limitation is also clear from the project record: the pipeline is
+          highly dependent on detection-model quality. Better training data and
+          newer detector designs would likely matter as much as downstream
+          engineering when moving the system to a new field or season.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

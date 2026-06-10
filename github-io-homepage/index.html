@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="BreCaspian's personal homepage for robotics, computer vision, reinforcement learning, SLAM, LiDAR perception, and neural field research."
+    />
+    <title>Yuzhuo YAO</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="profile">
+        <div class="intro">
+          <div class="intro-copy">
+            <p>
+              My current learning and research interests focus on efficient
+              visual attention mechanisms in computer vision, extreme
+              quantization of vision models, inference runtime acceleration,
+              sparse computation, and efficient model distillation.
+            </p>
+            <p>
+              I am also interested in autonomous exploration and target
+              tracking for high-speed UAVs, involving reinforcement learning,
+              path planning, multi-sensor fusion, perception, and control.
+            </p>
+            <p>
+              Recently, I have been actively studying Neural Field Theory and
+              exploring how attention mechanisms can be re-understood and
+              redesigned from a more effective biological perspective, with
+              the goal of investigating their potential value for visual
+              representation learning and efficient perception models.
+            </p>
+            <p>
+              If you have any interesting ideas related to these directions,
+              please feel free to reach out.
+            </p>
+          </div>
+          <div class="portrait-column">
+            <div class="portrait" aria-label="Portrait of Yuzhuo YAO">
+              <img
+                src="assets/profile/profile.jpg"
+                alt="Portrait of Yuzhuo YAO"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';"
+              />
+              <span>YY</span>
+            </div>
+            <h1>Yuzhuo YAO</h1>
+            <nav class="icon-links" aria-label="Profile links">
+              <a
+                href="mailto:yaoyuzhuo6@gmail.com"
+                aria-label="Email"
+                title="Email"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 6h16v12H4z" />
+                  <path d="m4 7 8 6 8-6" />
+                </svg>
+              </a>
+              <a
+                href="https://github.com/BreCaspian"
+                aria-label="GitHub"
+                title="GitHub"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.1-3.4-1.1-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.5 2.4 1.1 2.9.8.1-.7.4-1.1.7-1.3-2.2-.3-4.6-1.1-4.6-5A3.9 3.9 0 0 1 6.8 9c-.1-.3-.5-1.3.1-2.7 0 0 .9-.3 2.8 1a9.6 9.6 0 0 1 5.1 0c1.9-1.3 2.8-1 2.8-1 .6 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1.1 2.8c0 3.9-2.4 4.7-4.6 5 .4.3.7 1 .7 2.1V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"
+                  />
+                </svg>
+              </a>
+              <a href="#" aria-label="Google Scholar" title="Google Scholar">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 3 2 9l10 6 10-6-10-6z" />
+                  <path d="M6 12v4c2 2 10 2 12 0v-4" />
+                </svg>
+              </a>
+              <a href="#" aria-label="CV" title="CV">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M7 3h7l4 4v14H7z" />
+                  <path d="M14 3v5h4" />
+                  <path d="M9 13h6M9 17h6M9 9h3" />
+                </svg>
+              </a>
+            </nav>
+          </div>
+        </div>
+
+        <p class="bio">
+          &nbsp;
+        </p>
+      </header>
+
+      <section aria-labelledby="news-title">
+        <h2 id="news-title">News</h2>
+        <ul class="compact-list">
+          <li>
+            <time datetime="2026-01">Jan 2026</time>
+            Continuing study and experiments around Robotics.
+          </li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="work-title">
+        <h2 id="work-title">Selected Work</h2>
+        <div class="entry-list">
+          <article class="work-entry">
+            <a
+              class="work-thumb"
+              href="articles/the-bitter-taste.html"
+              aria-label="Open The Bitter Taste"
+            >
+              <img
+                src="assets/articles/the-bitter-taste/eagle.jpg"
+                alt="Eagle illustration for The Bitter Taste"
+              />
+            </a>
+            <h3>
+              <a href="articles/the-bitter-taste.html">The Bitter Taste</a>
+            </h3>
+            <p>
+              A personal essay written as a warning and reminder to my future
+              self, and to anyone walking a similar path.
+            </p>
+          </article>
+
+          <article class="work-entry">
+            <a
+              class="work-thumb"
+              href="projects/trtinferx.html"
+              aria-label="Open TRTInferX"
+            >
+              <img
+                src="assets/projects/trtinferx/result.gif"
+                alt="TRTInferX YOLOv11 inference preview"
+              />
+            </a>
+            <h3>
+              <a href="projects/trtinferx.html">TRTInferX</a>
+            </h3>
+              <p>
+                A high-performance TensorRT inference engine, supporting FP16
+                &amp; INT8 deployment, CUDA-native preprocessing and
+                post-processing, and a unified C++ runtime API.
+              </p>
+          </article>
+
+          <article class="work-entry">
+            <a
+              class="work-thumb work-thumb-left"
+              href="projects/counter-uav-laser-tracking.html"
+              aria-label="Open Counter-UAV Laser Tracking"
+            >
+              <img
+                src="assets/projects/counter-uav-laser-tracking/demo.gif"
+                alt="Counter-UAV Laser Tracking preview"
+              />
+            </a>
+            <h3>
+              <a href="projects/counter-uav-laser-tracking.html">
+                Counter-UAV Laser Tracking
+              </a>
+            </h3>
+              <p>
+                A modular real-time vision and gimbal-control prototype for
+                counter-UAV laser tracking.
+              </p>
+          </article>
+
+          <article class="work-entry">
+            <a
+              class="work-thumb work-thumb-top"
+              href="projects/lidar-localization-tracking-system.html"
+              aria-label="Open LiDAR Localization and Tracking System"
+            >
+              <img
+                src="assets/projects/lidar-localization-tracking-system/radar-station-front.jpg"
+                alt="Front view of the LiDAR radar station prototype"
+              />
+            </a>
+            <h3>
+              <a href="projects/lidar-localization-tracking-system.html">
+                LiDAR Localization &amp; Tracking System
+              </a>
+            </h3>
+              <p>
+                A RoboMaster radar-station system for LiDAR-assisted robot
+                localization, multi-target tracking, map projection, and
+                referee-system communication.
+              </p>
+          </article>
+
+          <article class="work-entry">
+            <a
+              class="work-thumb"
+              href="projects/lidar-camera-calibration-validator.html"
+              aria-label="Open LiDAR-Camera Calibration Validator"
+            >
+              <img
+                src="assets/projects/lidar-camera-calibration-validator/VisualizationGUI.png"
+                alt="LiDAR-Camera Calibration Validator preview"
+              />
+            </a>
+            <h3>
+              <a href="projects/lidar-camera-calibration-validator.html">
+                LiDAR-Camera Calibration Validator
+              </a>
+            </h3>
+              <p>
+                A Fast Visual Validation Tool for LiDAR-Camera Extrinsic
+                Calibration Results.
+              </p>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="publications-title">
+        <h2 id="publications-title">Publications</h2>
+        <ul class="compact-list">
+          <li>
+            <span class="muted">Manuscripts and technical reports will be added here.</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
