@@ -11,7 +11,7 @@ Feel free to reach out to me anytime via email. 🕊️
 [![Donate](https://img.shields.io/badge/Donate-UNICEF-blue)](https://donate.unicef.org.hk/zh-hant/one-time&HAC&1500/)  ![](https://komarev.com/ghpvc/?username=BreCaspian\&color=brightgreen) 
 
 <details>
-  <summary><strong>View Statistics and Visualizations</strong></summary>
+  <summary><strong>Statistics and Visualizations</strong></summary>
   <br/>
 
   <table align="center" width="100%">
