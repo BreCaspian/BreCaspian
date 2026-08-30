@@ -1,4 +1,4 @@
-My research primarily focuses on computer vision and reinforcement learning, with particular interest in robotic perception in complex environments and the development of more flexible and generalizable control policies.
+My research primarily focuses on Computer Vision and Reinforcement Learning, with particular interest in robotic perception in complex environments and the development of more flexible and generalizable control policies.
 
 I enjoy exploring how intelligent systems can perceive, adapt, and act reliably in challenging real-world scenarios.
 
