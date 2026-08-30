@@ -1,43 +1,18 @@
-## About Me — Robotique • Café • Paix 🍀 ![](https://komarev.com/ghpvc/?username=BreCaspian&color=brightgreen)  
+My research primarily focuses on computer vision and reinforcement learning, with particular interest in robotic perception in complex environments and the development of more flexible and generalizable control policies.
 
-Hi 👋 ！I am currently engaged in study and research at a **Robotics Laboratory**, focusing on:
+I enjoy exploring how intelligent systems can perceive, adapt, and act reliably in challenging real-world scenarios.
 
-- **Computer Vision & Reinforcement Learning & Neural Field Theory**
-- **SLAM & LiDAR Perception & Robotic Perception**
+Outside of research, I enjoy cooking and experimenting in the kitchen.
 
-> 🌟 *"Stay hungry, stay foolish."* — Steve Jobs
+*"Stay hungry, stay foolish."* — Steve Jobs [![Donate](https://img.shields.io/badge/Donate-UNICEF-blue)](https://donate.unicef.org.hk/zh-hant/one-time&HAC&1500/) 🍀
 
----
+Feel free to reach out to me anytime via email. ![](https://komarev.com/ghpvc/?username=BreCaspian\&color=brightgreen) 🕊️
 
-## Interests — Code is Beautiful Poetry 🕊️ [![Donate](https://img.shields.io/badge/🌍%20Donate-UNICEF-blue)](https://donate.unicef.org.hk/zh-hant/one-time&HAC&1500/)
 
-- Robotics & Artificial Intelligence
-- Heavy Coffee Enthusiast ☕
-- Technical writing and knowledge sharing  
-- May the world enjoy lasting peace, free from war
-- Say no to animal abuse. Support animal protection laws.
 
----
-
-## More Info 🐍
 <details>
-  <summary><strong>View Statistics and Visualizations</strong></summary>
+  <summary><strong></strong></summary>
   <br/>
-
-  <table align="center" width="100%">
-    <tr>
-      <td width="50%" valign="top">
-        <img src="github-metrics.svg"
-             alt="Metrics"
-             style="display:block; width:100%; height:300px; object-fit:contain;" />
-      </td>
-      <td width="50%" valign="top">
-        <img src="https://github-readme-stats-zeta-nine-75.vercel.app/api?username=BreCaspian&rank_icon=github&theme=transparent&hide_border=true"
-             alt="BreCaspian"
-             style="display:block; width:100%; height:300px; object-fit:contain;" />
-      </td>
-    </tr>
-  </table>
 
   <table align="center" width="100%">
     <tr>
@@ -68,17 +43,12 @@ Hi 👋 ！I am currently engaged in study and research at a **Robotics Laborato
 
 
 
-
-
-
-
-
-
-
-
-
-
 <!-- ------------------------------------------------------------------  -->
+
+
+
+
+
 
 <!-- ===== HEADER ===== -->
 
@@ -360,6 +330,93 @@ profile-3d-contrib/profile-gitblock.svg
 
 <!--
 ---------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+## About Me — Robotique • Café • Paix 🍀 ![](https://komarev.com/ghpvc/?username=BreCaspian&color=brightgreen)  
+
+Hi 👋 ！I am currently engaged in study and research at a **Robotics Laboratory**, focusing on:
+
+- **Computer Vision & Reinforcement Learning & Neural Field Theory**
+- **SLAM & LiDAR Perception & Robotic Perception**
+
+> 🌟 *"Stay hungry, stay foolish."* — Steve Jobs
+
+---
+
+## Interests — Code is Beautiful Poetry 🕊️ [![Donate](https://img.shields.io/badge/🌍%20Donate-UNICEF-blue)](https://donate.unicef.org.hk/zh-hant/one-time&HAC&1500/)
+
+- Robotics & Artificial Intelligence
+- Heavy Coffee Enthusiast ☕
+- Technical writing and knowledge sharing  
+- May the world enjoy lasting peace, free from war
+- Say no to animal abuse. Support animal protection laws.
+
+---
+
+## More Info 🐍
+<details>
+  <summary><strong>View Statistics and Visualizations</strong></summary>
+  <br/>
+
+  <table align="center" width="100%">
+    <tr>
+      <td width="50%" valign="top">
+        <img src="github-metrics.svg"
+             alt="Metrics"
+             style="display:block; width:100%; height:300px; object-fit:contain;" />
+      </td>
+      <td width="50%" valign="top">
+        <img src="https://github-readme-stats-zeta-nine-75.vercel.app/api?username=BreCaspian&rank_icon=github&theme=transparent&hide_border=true"
+             alt="BreCaspian"
+             style="display:block; width:100%; height:300px; object-fit:contain;" />
+      </td>
+    </tr>
+  </table>
+
+  <table align="center" width="100%">
+    <tr>
+      <td width="50%" valign="middle" align="center" height="160">
+        <img src="https://raw.githubusercontent.com/BreCaspian/BreCaspian/main/github-metrics/languages.indepth.svg"
+             alt="Languages"
+             style="display:block; max-width:100%; max-height:160px;" />
+      </td>
+      <td width="50%" valign="middle" align="center" height="160">
+        <img src="https://raw.githubusercontent.com/BreCaspian/BreCaspian/main/github-metrics/reactions.svg"
+             alt="Reactions"
+             style="display:block; max-width:100%; max-height:160px;" />
+      </td>
+    </tr>
+  </table>
+
+  <!-- 3D Contribution -->
+
+  <!--
+  ![GitHub 3D Contribution](https://raw.githubusercontent.com/BreCaspian/BreCaspian/main/profile-3d-contrib/profile-night-rainbow.svg)
+
+  <h2 align="center"><strong><em>安得广厦千万间，大庇天下寒士俱欢颜 ！</em></strong></h2>
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------
 
  👋 
 
