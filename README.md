@@ -4,9 +4,9 @@ I enjoy exploring how intelligent systems can perceive, adapt, and act reliably 
 
 Outside of research, I enjoy cooking and experimenting in the kitchen.
 
-*"Stay hungry, stay foolish."* — Steve Jobs 🍀
+*"Stay hungry, stay foolish."* — Steve Jobs 🍀 
 
-Feel free to reach out to me anytime via email. 🕊️
+Feel free to reach out to me anytime via email. My friends usually call me Yao. 🕊️
 
 [![Donate](https://img.shields.io/badge/Donate-UNICEF-blue)](https://donate.unicef.org.hk/zh-hant/one-time&HAC&1500/)  ![](https://komarev.com/ghpvc/?username=BreCaspian\&color=brightgreen) 
 
