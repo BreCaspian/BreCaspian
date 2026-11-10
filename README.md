@@ -2,11 +2,9 @@ My research primarily focuses on Computer Vision and Reinforcement Learning, wit
 
 I enjoy exploring how intelligent systems can perceive, adapt, and act reliably in challenging real-world scenarios.
 
-Outside of research, I enjoy cooking and experimenting in the kitchen.
+Outside of research, I enjoy cooking and experimenting in the kitchen.🕊️
 
-*"Stay hungry, stay foolish."* — Steve Jobs 🍀 
-
-Feel free to reach out to me anytime via email. My friends usually call me Yao. 🕊️
+Feel free to reach out to me anytime via email. My friends usually call me Yao. 
 
 [![Donate](https://img.shields.io/badge/Donate-UNICEF-blue)](https://donate.unicef.org.hk/zh-hant/one-time&HAC&1500/)  ![](https://komarev.com/ghpvc/?username=BreCaspian\&color=brightgreen) 
 
