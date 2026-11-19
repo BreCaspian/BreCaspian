@@ -1,12 +1,4 @@
-My research primarily focuses on Computer Vision and Reinforcement Learning, with particular interest in robotic perception in complex environments and the development of more flexible and generalizable control policies.
-
-I enjoy exploring how intelligent systems can perceive, adapt, and act reliably in challenging real-world scenarios.
-
-Outside of research, I enjoy cooking and experimenting in the kitchen.🕊️
-
-Feel free to reach out to me anytime via email. My friends usually call me Yao. 
-
-[![Donate](https://img.shields.io/badge/Donate-UNICEF-blue)](https://donate.unicef.org.hk/zh-hant/one-time&HAC&1500/)  ![](https://komarev.com/ghpvc/?username=BreCaspian\&color=brightgreen) 
+My research primarily focuses on Computer Vision and Reinforcement Learning, with particular interest in robotic perception in complex environments and the development of more flexible and generalizable control policies.I enjoy exploring how intelligent systems can perceive, adapt, and act reliably in challenging real-world scenarios.Outside of research, I enjoy cooking and experimenting in the kitchen.Feel free to reach out to me anytime via email. My friends usually call me Yao. [![Donate](https://img.shields.io/badge/Donate-UNICEF-blue)](https://donate.unicef.org.hk/zh-hant/one-time&HAC&1500/)  ![](https://komarev.com/ghpvc/?username=BreCaspian\&color=brightgreen) 
 
 <details>
   <summary><strong>Statistics and Visualizations</strong></summary>
